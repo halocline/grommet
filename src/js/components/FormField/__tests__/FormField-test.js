@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import styled from 'styled-components';
 import 'jest-styled-components';
+import { render } from '@testing-library/react';
 
 import { Grommet } from '../../Grommet';
 import { Form } from '../../Form';
@@ -196,5 +197,44 @@ describe('FormField', () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  test('should visually hide label, yet stay in DOM for screen readers', () => {
+    const { container, getByText } = render(
+      <Grommet>
+        <Form>
+          <FormField
+            id="hiddenLabel_id"
+            htmlFor="hiddenLabel_id"
+            name="hiddenLabel"
+            label={{ text: 'I am a visually hidden label', hidden: true }}
+            placeholder="Your first name"
+          />
+          <FormField
+            id="visibleLabel_id"
+            htmlFor="visibleLabel_id"
+            name="visibleLabel"
+            label="I am a visible label"
+            placeholder="name@company.com"
+          />
+        </Form>
+      </Grommet>,
+    );
+    const tree = container.firstChild;
+    expect(tree).toMatchSnapshot();
+
+    const hiddenLabel = getByText('I am a visually hidden label');
+    const hiddenLabelStyle = window.getComputedStyle(hiddenLabel);
+    // Hidden labels are styled as a 1x1 pixel with negative margin
+    // Testing for that styling. See
+    // https://www.w3.org/WAI/tutorials/forms/labels/#note-on-hiding-elements
+    // for background on approach.
+    expect(hiddenLabelStyle.height).toBe('1px');
+    expect(hiddenLabelStyle.width).toBe('1px');
+    expect(hiddenLabelStyle.margin).toBe('-1px');
+
+    const visibleLabel = getByText('I am a visible label');
+    const visibleLabelStyle = window.getComputedStyle(visibleLabel);
+    expect(visibleLabelStyle.margin).not.toBe('-1px');
   });
 });

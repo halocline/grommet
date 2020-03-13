@@ -2361,9 +2361,15 @@ node",
         "name": "info",
       },
       Object {
-        "description": "A short label describing the field",
+        "description": "A short label describing the field. The label may be a string, a 
+      component, or an object which allows for the label to be visually 
+      hidden, yet remain available for users utilizing a screen reader.",
         "format": "string
-node",
+node
+{
+  text: string,
+  hidden: boolean
+}",
         "name": "label",
       },
       Object {

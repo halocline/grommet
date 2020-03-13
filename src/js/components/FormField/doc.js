@@ -43,8 +43,17 @@ export const doc = FormField => {
     info: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).description(
       "Any informational text regarding the field's value",
     ),
-    label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).description(
-      'A short label describing the field',
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.node,
+      PropTypes.shape({
+        text: PropTypes.string,
+        hidden: PropTypes.bool,
+      }),
+    ]).description(
+      `A short label describing the field. The label may be a string, a 
+      component, or an object which allows for the label to be visually 
+      hidden, yet remain available for users utilizing a screen reader.`,
     ),
     name: PropTypes.string.description(
       `The name of the value data when in a Form and the name of

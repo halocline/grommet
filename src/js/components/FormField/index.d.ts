@@ -7,7 +7,7 @@ export interface FormFieldProps {
   help?: string | React.ReactNode;
   htmlFor?: string;
   info?: string | React.ReactNode;
-  label?: string | React.ReactNode;
+  label?: string | React.ReactNode | {text?: string, hidden?: boolean};
   margin?: MarginType;
   name?: string;
   options?: string[];

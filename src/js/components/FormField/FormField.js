@@ -49,6 +49,21 @@ const validateField = (required, validate, messages) => (value, data) => {
 };
 
 const FormFieldBox = styled(Box)`
+  ${props =>
+    props.label &&
+    props.label.hidden &&
+    // Visually hiding label, but leaving in DOM for screen readers.
+    // For background on approach see https://www.w3.org/WAI/tutorials/forms/labels/#note-on-hiding-elements
+    `label {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }`}
   ${props => props.theme.formField && props.theme.formField.extend}
 `;
 
@@ -110,7 +125,7 @@ const FormField = forwardRef(
         return (
           <Input
             name={name}
-            label={label}
+            label={label.text || label}
             checked={
               formValue[name] !== undefined ? formValue[name] : checked || false
             }
@@ -301,6 +316,7 @@ const FormField = forwardRef(
             : undefined
         }
         background={outerBackground}
+        label={label}
         margin={abut ? abutMargin : margin || { ...formField.margin }}
         round={border.position === 'outer' ? formField.round : undefined}
         style={outerStyle}
@@ -319,7 +335,7 @@ const FormField = forwardRef(
           <>
             {label && component !== CheckBox && (
               <Text as="label" htmlFor={htmlFor} {...formField.label}>
-                {label}
+                {label.text || label}
               </Text>
             )}
             <Message message={help} {...formField.help} />

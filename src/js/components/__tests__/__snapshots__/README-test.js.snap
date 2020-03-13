@@ -5871,11 +5871,17 @@ node
 
 **label**
 
-A short label describing the field
+A short label describing the field. The label may be a string, a 
+      component, or an object which allows for the label to be visually 
+      hidden, yet remain available for users utilizing a screen reader.
 
 \`\`\`
 string
 node
+{
+  text: string,
+  hidden: boolean
+}
 \`\`\`
 
 **name**
