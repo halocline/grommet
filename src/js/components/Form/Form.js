@@ -76,8 +76,8 @@ const Form = forwardRef(
     const validations = useRef({});
 
     useEffect(() => {
-      if (onChange) onChange(value);
-    }, [onChange, value]);
+      if (onChange && value !== valueProp) onChange(value);
+    }, [onChange, value, valueProp]);
 
     useEffect(() => {}, [value, errors, infos]);
 
@@ -123,7 +123,7 @@ const Form = forwardRef(
     }, []);
 
     const useFormContext = (name, componentValue) => {
-      const valueData = name && value[name] !== undefined ? value[name] : '';
+      const valueData = name && value[name];
       const [data, setData] = useState(
         componentValue !== undefined ? componentValue : valueData,
       );
@@ -140,8 +140,11 @@ const Form = forwardRef(
       return [
         data,
         nextData => {
-          if (name) update(name, nextData);
-          setData(nextData);
+          // only set if the caller hasn't supplied a specific value
+          if (componentValue === undefined) {
+            if (name) update(name, nextData);
+            setData(nextData);
+          }
         },
       ];
     };
@@ -188,6 +191,9 @@ const Form = forwardRef(
           value={{
             addValidation: (name, validation) => {
               validations.current[name] = validation;
+            },
+            removeValidation: name => {
+              delete validations.current[name];
             },
             onBlur:
               validate === 'blur'
