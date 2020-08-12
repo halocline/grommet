@@ -197,12 +197,14 @@ const InfiniteScroll = ({
     // The new way, we pass the ref we want to the children render function.
     let ref;
     if (!pageHeight && itemsIndex === 0) ref = firstPageItemRef;
-    else if (
-      !pageHeight &&
-      (itemsIndex === step - 1 || itemsIndex === lastIndex)
-    )
+    /* When show, items range may include indexes at both at the step - 1 as
+     * equal well as lastIndex. In that case, lastIndex will be greater than
+     * or to step, so assign lastPageItemRef at lastIndex.
+     */ else if (!pageHeight && !show && itemsIndex === step - 1)
       ref = lastPageItemRef;
-    else if (show && show === itemsIndex) ref = showRef;
+    else if (!pageHeight && itemsIndex === lastIndex) ref = lastPageItemRef;
+
+    if (show && show === itemsIndex) ref = showRef;
 
     let child = children(item, itemsIndex, ref);
 
@@ -214,8 +216,23 @@ const InfiniteScroll = ({
         </Ref>
       );
     } else if (
+      /* When show, items range may include indexes at both at the step - 1 as
+       * equal well as lastIndex. In that case, lastIndex will be greater than
+       * or to step, so assign lastPageItemRef at lastIndex.
+       */
       !pageHeight &&
-      (itemsIndex === step - 1 || itemsIndex === lastIndex) &&
+      !show &&
+      itemsIndex === step - 1 &&
+      child.ref !== lastPageItemRef
+    ) {
+      child = (
+        <Ref key="last" ref={lastPageItemRef}>
+          {child}
+        </Ref>
+      );
+    } else if (
+      !pageHeight &&
+      itemsIndex === lastIndex &&
       child.ref !== lastPageItemRef
     ) {
       child = (
@@ -224,6 +241,7 @@ const InfiniteScroll = ({
         </Ref>
       );
     }
+
     if (show && show === itemsIndex && child.ref !== showRef) {
       child = (
         <Ref key="show" ref={showRef}>
