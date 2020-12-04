@@ -25,7 +25,7 @@ const Simple = () => (
         <Text>
           numActivePages = 2 (number of pages to left/right of middle page)
         </Text>
-        <Pagination items={237} show={10} numActivePages={2} />
+        <Pagination items={237} show={9} numActivePages={2} />
       </Box>
       <Box>
         <Text>numEdgePages = 0</Text>
