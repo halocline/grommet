@@ -73,7 +73,7 @@ const List = React.forwardRef(
       paginationProps,
       primaryKey,
       secondaryKey,
-      show,
+      show: showProp,
       step,
       onClickItem,
       onMore,
@@ -86,9 +86,19 @@ const List = React.forwardRef(
     const [active, setActive] = useState();
     const [itemFocus, setItemFocus] = useState();
 
+    let show;
+    let showItem;
+    // by default, show refers to an item in the List,
+    // but if using pagination, show can take the form of { page: # },
+    // where number refers to the page # to show
+    if (typeof showProp === 'number') showItem = showProp;
+    else if (typeof showProp === 'object' && 'page' in showProp) {
+      show = showProp.page;
+    }
+
     const [setPage, currentItems, currentPage] = usePagination({
       data,
-      paginationProps: { showItem: show, step, ...paginationProps },
+      paginationProps: { showItem, show, step, ...paginationProps },
     });
 
     return (

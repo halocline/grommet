@@ -20,7 +20,7 @@ const Pagination = forwardRef(
       numMiddlePages = 1, // number of pages surrounding the active page
       onChange,
       page: pageProp,
-      show,
+      show: showProp,
       showFirst,
       showLast,
       // ideating on prop to show a message like "Showing x-y of z items"
@@ -31,9 +31,23 @@ const Pagination = forwardRef(
     ref,
   ) => {
     const theme = useContext(ThemeContext) || defaultProps.theme;
+
+    let show;
+    let showItem;
+    // if children are provided, show can take form of { item: # },
+    // where # is the item to show
+    if (typeof showProp === 'object' && 'item' in showProp) {
+      if (!children) {
+        console.warn(
+          // eslint-disable-next-line max-len
+          `Cannot show item because children have not been provided to Pagination.`,
+        );
+      } else showItem = showProp.item;
+    } else if (typeof showProp === 'number') show = showProp;
+
     const [setPage, currentItems, currentPage, step] = usePagination({
       data: items,
-      paginationProps: { show, step: stepProp },
+      paginationProps: { showItem, show, step: stepProp },
     });
 
     const [activePage, setActivePage] = useState(currentPage);
