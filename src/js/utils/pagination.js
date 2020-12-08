@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 // getPaginatedItems
 export const usePagination = ({ data, paginationProps }) => {
-  // num items per page
+  // step specifies the number of items per page of results
   const step = (paginationProps && paginationProps.step) || 10;
   let defaultPage;
   if (paginationProps) {
