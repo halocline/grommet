@@ -53,7 +53,7 @@ const PaginatedDataTable = () => {
           sortable
         />
       </Box>
-      {/* <Box
+      <Box
         background="background-back"
         margin="large"
         pad="small"
@@ -94,7 +94,7 @@ const PaginatedDataTable = () => {
           sortable
           pin
         />
-      </Box> */}
+      </Box>
     </Grommet>
   );
 };
