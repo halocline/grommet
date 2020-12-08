@@ -20,18 +20,17 @@ const Pagination = forwardRef(
       numMiddlePages = 1, // number of pages surrounding the active page
       onChange,
       page: pageProp,
-      // ideating on prop to show a message like "Showing x-y of z items"
-      // showSummary,
       show,
       showFirst,
       showLast,
+      // ideating on prop to show a message like "Showing x-y of z items"
+      // showSummary,
       step: stepProp,
       ...rest
     },
     ref,
   ) => {
     const theme = useContext(ThemeContext) || defaultProps.theme;
-
     const [setPage, currentItems, currentPage, step] = usePagination({
       data: items,
       paginationProps: { show, step: stepProp },
@@ -212,24 +211,13 @@ const Pagination = forwardRef(
          If so, applying the container props to this box now may leave better
           flexibility moving forward
         */}
-        <StyledPaginationContainer {...theme.pagination.container}>
+        <StyledPaginationContainer {...theme.pagination.container} {...rest}>
           {/* Ideation: internal control of some results summary, need to think 
           about what the default would be and how it may be customized
           */}
           {/* {showSummary && <Text>Showing 1-10 of 500 results</Text>} */}
-          <Nav
-            a11yTitle={a11yTitle || 'Pagination Navigation'}
-            ref={ref}
-            {...rest}
-          >
-            <Box
-              as="ul"
-              align="center"
-              direction="row"
-              gap="xxsmall"
-              pad="none"
-              margin="none"
-            >
+          <Nav a11yTitle={a11yTitle || 'Pagination Navigation'} ref={ref}>
+            <Box as="ul" {...theme.pagination.controls}>
               {pages.map(page => (
                 <PageIndex key={page.page} {...page} />
               ))}

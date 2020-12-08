@@ -947,10 +947,17 @@ export const generate = (baseSpacing = 24, scale = 6) => {
       //   // any box props,
       //   // extend: undefined,
       // },
+      controls: {
+        align: 'center',
+        direction: 'row',
+        gap: 'xxsmall',
+        pad: 'none',
+        margin: 'none',
+      },
       icons: {
         // color: undefined,
-        first: ChapterPrevious,
-        last: ChapterNext,
+        first: ChapterPrevious, // placeholder icon for discussion purposes
+        last: ChapterNext, // placeholder icon for discussion purposes
         next: Next,
         previous: Previous,
       },
