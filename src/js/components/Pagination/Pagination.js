@@ -3,7 +3,7 @@ import styled, { ThemeContext } from 'styled-components';
 import { Box } from '../Box';
 import { Nav } from '../Nav';
 import { PageIndex } from './PageIndex';
-import { usePagination } from '../../utils/pagination';
+import { normalizeShow, usePagination } from '../../utils/pagination';
 
 const StyledPaginationContainer = styled(Box)`
   ${props =>
@@ -32,24 +32,7 @@ const Pagination = forwardRef(
   ) => {
     const theme = useContext(ThemeContext) || defaultProps.theme;
 
-    let show;
-    let showItem;
-    // if children are provided, show can take form of { item: # },
-    // where # is the item to show
-    if (typeof showProp === 'object') {
-      if ('page' in showProp) {
-        // if user provides both page and item to showProp, page should win
-        show = showProp.page;
-      } else if ('index' in showProp) showItem = showProp.index;
-
-      if ('index' in showProp && 'page' in showProp) {
-        console.warn(
-          // eslint-disable-next-line max-len
-          `Property "show" should not have keys for both index and page. Remove one.`,
-        );
-      }
-    } else if (typeof showProp === 'number') show = showProp;
-
+    const [show, showItem] = normalizeShow(showProp, 'pagination');
     const [setPage, currentItems, currentPage, step] = usePagination({
       data: items,
       paginationProps: { showItem, show, step: stepProp },

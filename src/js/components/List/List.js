@@ -9,6 +9,7 @@ import { Text } from '../Text';
 import {
   focusStyle,
   genericStyles,
+  normalizeShow,
   unfocusStyle,
   useForwardedRef,
   usePagination,
@@ -86,27 +87,7 @@ const List = React.forwardRef(
     const [active, setActive] = useState();
     const [itemFocus, setItemFocus] = useState();
 
-    let show;
-    let showItem;
-    // by default, show refers to the index of an item in the List,
-    // but if using pagination, show can take the form of { page: # },
-    // where page refers to the page # to show or { index: # },
-    // where index refers to the index of an item in the list
-    if (typeof showProp === 'number') showItem = showProp;
-    else if (typeof showProp === 'object') {
-      // if user provides both page and index to showProp, index should win
-      if ('index' in showProp) {
-        showItem = showProp.index;
-      } else if ('page' in showProp) show = showProp.page;
-
-      if ('index' in showProp && 'page' in showProp) {
-        console.warn(
-          // eslint-disable-next-line max-len
-          `Property "show" should not have keys for both index and page. Remove one.`,
-        );
-      }
-    }
-
+    const [show, showItem] = normalizeShow(showProp, 'list');
     const [setPage, currentItems, currentPage] = usePagination({
       data,
       paginationProps: { showItem, show, step, ...paginationProps },

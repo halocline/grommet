@@ -13,7 +13,7 @@ import {
   initializeFilters,
   normalizePrimaryProperty,
 } from './buildState';
-import { usePagination } from '../../utils';
+import { normalizeShow, usePagination } from '../../utils';
 import { StyledDataTable } from './StyledDataTable';
 
 const contexts = ['header', 'body', 'footer'];
@@ -193,27 +193,7 @@ const DataTable = ({
     console.warn('DataTable cannot combine "size" and "resizeble".');
   }
 
-  let show;
-  let showItem;
-  // by default, show refers to the index of an item in the DataTable,
-  // but if using pagination, show can take the form of { page: # },
-  // where page refers to the page # to show or { index: # },
-  // where index refers to the index of an item in the DataTable
-  if (typeof showProp === 'number') showItem = showProp;
-  else if (typeof showProp === 'object') {
-    // if user provides both page and index to showProp, index should win
-    if ('index' in showProp) {
-      showItem = showProp.index;
-    } else if ('page' in showProp) show = showProp.page;
-
-    if ('index' in showProp && 'page' in showProp) {
-      console.warn(
-        // eslint-disable-next-line max-len
-        `Property "show" should not have keys for both index and page. Remove one.`,
-      );
-    }
-  }
-
+  const [show, showItem] = normalizeShow(showProp, 'dataTable');
   const [setPage, currentItems, currentPage] = usePagination({
     data: adjustedData,
     paginationProps: { showItem, show, step, ...paginationProps },
