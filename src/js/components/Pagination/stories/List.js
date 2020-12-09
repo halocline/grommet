@@ -23,7 +23,7 @@ const PaginatedList = () => (
       round="small"
       gap="medium"
     >
-      <Text weight="bold">paginate + step = 3 + show = 12</Text>
+      <Text weight="bold">paginate + step = 3 + show = 11</Text>
       <List
         data={data}
         action={(item, index) => {
@@ -37,7 +37,7 @@ const PaginatedList = () => (
           );
         }}
         step={3}
-        show={12}
+        show={11}
         paginate
       />
     </Box>

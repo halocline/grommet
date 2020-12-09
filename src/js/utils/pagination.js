@@ -7,7 +7,8 @@ export const usePagination = ({ data, paginationProps }) => {
   let defaultPage;
   if (paginationProps) {
     if (paginationProps.showItem)
-      defaultPage = Math.ceil(paginationProps.showItem / step);
+      // showItem is an array index, so we add one
+      defaultPage = Math.ceil((paginationProps.showItem + 1) / step);
     if (paginationProps.show) defaultPage = paginationProps.show;
   }
 

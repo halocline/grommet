@@ -36,13 +36,18 @@ const Pagination = forwardRef(
     let showItem;
     // if children are provided, show can take form of { item: # },
     // where # is the item to show
-    if (typeof showProp === 'object' && 'item' in showProp) {
-      if (!children) {
+    if (typeof showProp === 'object') {
+      if ('page' in showProp) {
+        // if user provides both page and item to showProp, page should win
+        show = showProp.page;
+      } else if ('index' in showProp) showItem = showProp.index;
+
+      if ('index' in showProp && 'page' in showProp) {
         console.warn(
           // eslint-disable-next-line max-len
-          `Cannot show item because children have not been provided to Pagination.`,
+          `Property "show" should not have keys for both index and page. Remove one.`,
         );
-      } else showItem = showProp.item;
+      }
     } else if (typeof showProp === 'number') show = showProp;
 
     const [setPage, currentItems, currentPage, step] = usePagination({
