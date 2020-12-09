@@ -23,7 +23,7 @@ export const normalizeShow = (showProp, context) => {
     // where page refers to the page # to show
     else if (typeof showProp === 'object') {
       if ('page' in showProp) {
-        // if user provides both page and item to showProp, page should win
+        // in this context, if user provides both page and item to showProp, page should win
         show = showProp.page;
       } else if ('index' in showProp) showItem = showProp.index;
     }
