@@ -36,6 +36,7 @@ const Pagination = forwardRef(
     const [setPage, currentItems, currentPage, step] = usePagination({
       data: items,
       paginationProps: { showItem, show, step: stepProp },
+      theme,
     });
 
     const [activePage, setActivePage] = useState(currentPage);

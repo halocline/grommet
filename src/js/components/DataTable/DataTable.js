@@ -1,4 +1,11 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
+import { ThemeContext } from 'styled-components';
 
 import { Header } from './Header';
 import { Footer } from './Footer';
@@ -65,6 +72,8 @@ const DataTable = ({
   step = 50,
   ...rest
 }) => {
+  const theme = useContext(ThemeContext) || defaultProps.theme;
+
   // property name of the primary property
   const primaryProperty = useMemo(
     () => normalizePrimaryProperty(columns, primaryKey),
@@ -197,6 +206,7 @@ const DataTable = ({
   const [setPage, currentItems, currentPage] = usePagination({
     data: adjustedData,
     paginationProps: { showItem, show, step, ...paginationProps },
+    theme,
   });
 
   return (
