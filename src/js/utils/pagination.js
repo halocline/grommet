@@ -4,7 +4,7 @@ export const normalizeShow = (showProp, context) => {
   let show;
   let showItem;
 
-  if (context === 'dataTable' || context === 'list') {
+  if (['dataTable', 'list'].includes(context)) {
     // by default, show refers to the index of an item in the List,
     // but if using pagination, show can take the form of { page: # },
     // where page refers to the page # to show or { index: # },
