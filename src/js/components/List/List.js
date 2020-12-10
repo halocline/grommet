@@ -87,11 +87,13 @@ const List = React.forwardRef(
     const [active, setActive] = useState();
     const [itemFocus, setItemFocus] = useState();
 
-    const [show, showItem] = normalizeShow(showProp, 'list');
+    const [page, showItem] = normalizeShow(showProp, 'list');
     const [setPage, currentItems, currentPage] = usePagination({
       data,
-      paginationProps: { showItem, show, step, ...paginationProps },
+      paginationProps: { page, showItem, step, ...paginationProps },
     });
+
+    console.log({ currentPage });
 
     return (
       <>
@@ -274,7 +276,7 @@ const List = React.forwardRef(
             onChange={event => {
               setPage(event.page);
             }}
-            show={currentPage}
+            page={currentPage}
             step={step}
             {...paginationProps}
           />
