@@ -25,7 +25,7 @@ describe('Pagination', () => {
 
   test('should show correct page when "show" is number ', () => {});
 
-  test('should show correct page when "show" is { index: # }', () => {});
+  test('should show correct item index when "show" is { index: # }', () => {});
 
   test('should show correct page when "show" is { page: # }', () => {});
 
