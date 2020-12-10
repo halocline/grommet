@@ -45,4 +45,4 @@ const PaginatedCards = () => {
   );
 };
 
-storiesOf('Pagination', module).add('Cards', () => <PaginatedCards />);
+storiesOf('Pagination', module).add('Grid', () => <PaginatedCards />);
