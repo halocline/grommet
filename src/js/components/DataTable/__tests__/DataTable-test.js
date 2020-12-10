@@ -865,5 +865,7 @@ describe('DataTable', () => {
 
   test('should show correct page when "show" is { page: # }', () => {});
 
+  test('should show correct page when "show" is { index: # }', () => {});
+
   test('should render correct num items per page (step)', () => {});
 });

@@ -23,8 +23,6 @@ describe('Pagination', () => {
 
   test('should render showLast button', () => {});
 
-  test('should render showLast button', () => {});
-
   test('should show correct page when "show" is number ', () => {});
 
   test('should show correct page when "show" is { index: # }', () => {});
