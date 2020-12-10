@@ -13,7 +13,7 @@ describe('Pagination', () => {
 
   test('should have no accessibility violations', () => {});
 
-  test('should calculate correct number of pages', () => {});
+  test('should display the correct last page based on items length and step', () => {});
 
   test('should render correct numEdgePages', () => {});
 
