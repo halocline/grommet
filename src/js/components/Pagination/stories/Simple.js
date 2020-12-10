@@ -21,38 +21,28 @@ const Simple = () => {
           <Pagination items={237} />
         </Box>
         <Box>
-          <Text>show = 10</Text>
-          <Pagination items={237} show={10} />
+          <Text>page = 10</Text>
+          <Pagination items={237} page={10} />
         </Box>
         <Box>
           <Text>numEdgePages = 2 (number of pages on start/end)</Text>
-          <Pagination items={237} show={10} numEdgePages={2} showSummary />
+          <Pagination items={237} page={10} numEdgePages={2} />
         </Box>
         <Box>
           <Text>
             numMiddlePages = 2 (number of pages to left/right of middle page)
           </Text>
-          <Pagination items={237} show={10} numMiddlePages={2} />
+          <Pagination items={237} page={10} numMiddlePages={2} />
         </Box>
         <Box>
           <Text>numEdgePages = 0</Text>
-          <Pagination items={237} show={10} numEdgePages={0} />
-        </Box>
-        <Box>
-          <Text>showFirst and showLast</Text>
-          <Pagination
-            items={237}
-            numEdgePages={0}
-            show={4}
-            showFirst
-            showLast
-          />
+          <Pagination items={237} page={10} numEdgePages={0} />
         </Box>
         <Box>
           <Text>Box Props</Text>
           <Pagination
             items={237}
-            show={2}
+            page={2}
             background="background-contrast"
             align="center"
             pad="medium"
