@@ -20,15 +20,12 @@ describe('Pagination', () => {
 
   test('should render correct numMiddlePages', () => {});
 
-  test('should render showFirst button', () => {});
+  test('should show correct page when "page" is provided', () => {});
 
-  test('should render showLast button', () => {});
+  test('should allow user to control page using page and onChange', () => {});
 
-  test('should show correct page when "show" is number ', () => {});
-
-  test('should show correct item index when "show" is { index: # }', () => {});
-
-  test('should show correct page when "show" is { page: # }', () => {});
+  test(`should provide correct page, startIndex, and endIndex to user in 
+  onChange`, () => {});
 
   test('should render children', () => {});
 
@@ -42,12 +39,6 @@ describe('Pagination', () => {
   selected`, () => {});
 
   test(`should display previous page of results when "previous" is 
-  selected`, () => {});
-
-  test(`should display first page of results when "showFirst" is 
-  selected`, () => {});
-
-  test(`should display last page of results when "showLast" is 
   selected`, () => {});
 
   test(`should display page 'n' of results when "page n" is 
