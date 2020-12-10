@@ -93,8 +93,6 @@ const List = React.forwardRef(
       paginationProps: { page, showItem, step, ...paginationProps },
     });
 
-    console.log({ currentPage });
-
     return (
       <>
         <Keyboard
