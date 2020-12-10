@@ -856,4 +856,14 @@ describe('DataTable', () => {
     fireEvent.mouseOver(getByLabelText('select beta'));
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  test('should paginate', () => {});
+
+  test('should apply paginationProps', () => {});
+
+  test('should show correct item index when "show" is a number', () => {});
+
+  test('should show correct page when "show" is { page: # }', () => {});
+
+  test('should render correct num items per page (step)', () => {});
 });
