@@ -13,7 +13,8 @@ describe('Pagination', () => {
 
   test('should have no accessibility violations', () => {});
 
-  test('should display the correct last page based on items length and step', () => {});
+  test(`should display the correct last page based on items length 
+  and step`, () => {});
 
   test('should render correct numEdgePages', () => {});
 
@@ -35,4 +36,20 @@ describe('Pagination', () => {
 
   test(`should allow user to control page via state with page + 
   onChange`, () => {});
+
+  // behaviors to test. Each should pass click and keyboard
+  test(`should display next page of results when "next" is 
+  selected`, () => {});
+
+  test(`should display previous page of results when "previous" is 
+  selected`, () => {});
+
+  test(`should display first page of results when "showFirst" is 
+  selected`, () => {});
+
+  test(`should display last page of results when "showLast" is 
+  selected`, () => {});
+
+  test(`should display page 'n' of results when "page n" is 
+  selected`, () => {});
 });
