@@ -21,7 +21,7 @@ const Simple = () => {
           <Pagination numItems={237} />
         </Box>
         <Box>
-          <Text>page = 10</Text>
+          <Text>show = 10</Text>
           <Pagination numItems={237} show={10} />
         </Box>
         <Box>
