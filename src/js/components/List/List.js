@@ -91,7 +91,6 @@ const List = React.forwardRef(
     const [setPage, currentItems, currentPage] = usePagination({
       data,
       paginationProps: { showItem, show, step, ...paginationProps },
-      theme,
     });
 
     return (

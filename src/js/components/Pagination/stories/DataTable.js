@@ -65,7 +65,6 @@ const PaginatedDataTable = () => {
           columns={columns}
           data={[...DATA]}
           step={10}
-          show={1}
           select={select}
           onSelect={setSelect}
           paginationProps={{

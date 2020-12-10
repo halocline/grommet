@@ -961,8 +961,6 @@ export const generate = (baseSpacing = 24, scale = 6) => {
         next: Next,
         previous: Previous,
       },
-      show: 1,
-      step: 10,
     },
     paragraph: {
       font: {

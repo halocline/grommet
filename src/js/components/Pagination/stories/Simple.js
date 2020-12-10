@@ -42,7 +42,7 @@ const Simple = () => {
           <Text>Box Props</Text>
           <Pagination
             numItems={237}
-            page={2}
+            show={2}
             background="background-contrast"
             align="center"
             pad="medium"

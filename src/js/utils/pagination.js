@@ -46,10 +46,9 @@ export const normalizeShow = (showProp, context) => {
 };
 
 // getPaginatedItems
-export const usePagination = ({ data, paginationProps, theme }) => {
+export const usePagination = ({ data, paginationProps }) => {
   // step specifies the number of items per page of results
-  const step =
-    (paginationProps && paginationProps.step) || theme.pagination.step; // 10
+  const step = (paginationProps && paginationProps.step) || 10;
   let defaultPage;
   if (paginationProps) {
     if (paginationProps.showItem)
@@ -58,10 +57,7 @@ export const usePagination = ({ data, paginationProps, theme }) => {
     if (paginationProps.show) defaultPage = paginationProps.show;
   }
 
-  if (!defaultPage)
-    [defaultPage] = normalizeShow(theme.pagination.show, 'pagination');
-
-  const [page, setPage] = useState(defaultPage); // 1
+  const [page, setPage] = useState(defaultPage || 1);
   const itemsBeginIndex = step * (page - 1);
   const itemsEndIndex = itemsBeginIndex + step;
   const getCurrentItems = useCallback(
