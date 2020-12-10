@@ -142,8 +142,8 @@ const Pagination = forwardRef(
         disabled: activePage === 1,
         icon: <PreviousIcon color={iconColor} />,
         onClick: event => {
-          const nextPage = activePage - 1;
-          handleClick(event, nextPage);
+          const previousPage = activePage - 1;
+          handleClick(event, previousPage);
         },
         page: undefined,
       },
