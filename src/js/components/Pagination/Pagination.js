@@ -110,7 +110,7 @@ const Pagination = forwardRef(
 
       // for controlled use cases, provide user with info on
       // what range of indices should be displayed given the active page
-      const { startIndex, endIndex } = getDataIndices(nextPage);
+      const { startIndex, endIndex } = getItemIndices(nextPage);
       adjustedEvent.startIndex = startIndex;
       adjustedEvent.endIndex = endIndex;
 
