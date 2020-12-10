@@ -196,7 +196,7 @@ const DataTable = ({
   const [page, showItem] = normalizeShow(showProp, 'dataTable');
   const [setPage, currentItems, currentPage] = usePagination({
     data: adjustedData,
-    paginationProps: { showItem, page, step, ...paginationProps },
+    paginationProps: { page, showItem, step, ...paginationProps },
   });
 
   return (

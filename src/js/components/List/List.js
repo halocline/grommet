@@ -90,7 +90,7 @@ const List = React.forwardRef(
     const [page, showItem] = normalizeShow(showProp, 'list');
     const [setPage, currentItems, currentPage] = usePagination({
       data,
-      paginationProps: { showItem, page, step, ...paginationProps },
+      paginationProps: { page, showItem, step, ...paginationProps },
     });
 
     return (
