@@ -58,7 +58,7 @@ export const doc = Pagination => {
         `If provided as a number, the default page to show. If provided as an 
         object in the format of show={{ item: 2 }}, the default item to show.`,
       )
-      .defaultValue(undefined),
+      .defaultValue(1),
     showFirst: PropTypes.bool
       .description('Whether a jump to first page button is visible.')
       .defaultValue(undefined),
