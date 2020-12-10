@@ -65,6 +65,7 @@ const PaginatedDataTable = () => {
           columns={columns}
           data={[...DATA]}
           step={10}
+          show={1}
           select={select}
           onSelect={setSelect}
           paginationProps={{
@@ -77,22 +78,6 @@ const PaginatedDataTable = () => {
             step: 7,
           }}
           sortable
-        />
-      </Box>
-      <Box
-        background="background-back"
-        margin="large"
-        pad="small"
-        round="small"
-      >
-        <DataTable
-          columns={columns}
-          data={[...DATA]}
-          step={10}
-          select={select}
-          onSelect={setSelect}
-          sortable
-          pin
         />
       </Box>
     </Grommet>
