@@ -16,7 +16,8 @@ const Pagination = forwardRef(
       a11yTitle,
       numItems,
       numEdgePages = 1, // number of pages at each edge of page indices
-      numMiddlePages = 3, // number of page controls in the middle
+      // number of page controls in the middle
+      numMiddlePages: numMiddlePagesProp = 3,
       onChange,
       page: pageProp,
       show: showProp,
@@ -54,9 +55,15 @@ const Pagination = forwardRef(
       totalPages,
     );
 
-    if (numMiddlePages < 1) {
-      console.warn(`Property "numMiddlePages" should not be < 1.`);
-    }
+    let numMiddlePages;
+    if (numMiddlePagesProp < 1) {
+      numMiddlePages = 1;
+      console.warn(
+        // eslint-disable-next-line max-len
+        `Property "numMiddlePages" should not be < 1. One middle page button will be shown. Set "numMiddlePages" >= 1 to remove this warning.`,
+      );
+    } else numMiddlePages = numMiddlePagesProp;
+
     let startingMiddlePages;
     // odd
     if (numMiddlePages % 2)
