@@ -12481,6 +12481,10 @@ exports[`DataTable should apply pagination styling 1`] = `
   border-radius: 4px;
 }
 
+.c16:hover {
+  padding: 4px;
+}
+
 .c14 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14670,6 +14674,10 @@ exports[`DataTable should paginate 1`] = `
   border-radius: 4px;
 }
 
+.c16:hover {
+  padding: 4px;
+}
+
 .c14 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16853,6 +16861,10 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
   border-radius: 4px;
 }
 
+.c16:hover {
+  padding: 4px;
+}
+
 .c14 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -17993,6 +18005,10 @@ exports[`DataTable should render new data when page changes 1`] = `
 .c16 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c16:hover {
+  padding: 4px;
 }
 
 .c14 {
@@ -23594,7 +23610,7 @@ exports[`DataTable should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to previous page"
-              class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+              class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
               kind="[object Object]"
               type="button"
             >
@@ -23621,7 +23637,7 @@ exports[`DataTable should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to page 1"
-              class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+              class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
               kind="[object Object]"
               type="button"
             >
@@ -23637,7 +23653,7 @@ exports[`DataTable should render new data when page changes 2`] = `
             <button
               aria-current="page"
               aria-label="Go to page 2"
-              class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+              class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
               kind="[object Object]"
               type="button"
             >
@@ -23653,7 +23669,7 @@ exports[`DataTable should render new data when page changes 2`] = `
             <button
               aria-disabled="true"
               aria-label="Go to next page"
-              class="StyledButtonKind-sc-1vhfpnt-0 fVgacz StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+              class="StyledButtonKind-sc-1vhfpnt-0 fVgacz StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
               disabled=""
               kind="[object Object]"
               type="button"
@@ -24107,6 +24123,10 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
 .c16 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c16:hover {
+  padding: 4px;
 }
 
 .c14 {
@@ -26272,6 +26292,10 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
 .c15 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c15:hover {
+  padding: 4px;
 }
 
 .c13 {

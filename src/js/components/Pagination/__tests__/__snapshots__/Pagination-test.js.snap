@@ -241,6 +241,10 @@ exports[`Pagination should allow user to control page via state with page +
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -778,6 +782,10 @@ exports[`Pagination should apply custom theme 1`] = `
 .c7 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c7:hover {
+  padding: 4px;
 }
 
 .c5 {
@@ -1325,6 +1333,10 @@ exports[`Pagination should disable next button if on last page 1`] = `
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1767,6 +1779,10 @@ exports[`Pagination should disable previous and next controls when numItems
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2059,6 +2075,10 @@ exports[`Pagination should disable previous and next controls when numItems
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
@@ -2399,6 +2419,10 @@ exports[`Pagination should disable previous and next controls when numItems
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
@@ -2857,6 +2881,10 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3308,6 +3336,10 @@ exports[`Pagination should display next page of results when "next" is
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3536,7 +3568,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to previous page"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3563,7 +3595,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to page 1"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3579,7 +3611,7 @@ exports[`Pagination should display next page of results when "next" is
           <button
             aria-current="page"
             aria-label="Go to page 2"
-            class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3594,7 +3626,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to page 3"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3609,7 +3641,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to page 4"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3624,7 +3656,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to page 5"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3651,7 +3683,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to page 24"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3666,7 +3698,7 @@ exports[`Pagination should display next page of results when "next" is
         >
           <button
             aria-label="Go to next page"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -3931,6 +3963,10 @@ exports[`Pagination should display page 'n' of results when "page n" is
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4380,6 +4416,10 @@ exports[`Pagination should display previous page of results when "previous" is
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4608,7 +4648,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to previous page"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4635,7 +4675,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to page 1"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4651,7 +4691,7 @@ exports[`Pagination should display previous page of results when "previous" is
           <button
             aria-current="page"
             aria-label="Go to page 2"
-            class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 jrRdnJ StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4666,7 +4706,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to page 3"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4681,7 +4721,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to page 4"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4696,7 +4736,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to page 5"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4723,7 +4763,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to page 24"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -4738,7 +4778,7 @@ exports[`Pagination should display previous page of results when "previous" is
         >
           <button
             aria-label="Go to next page"
-            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 khwAB"
+            class="StyledButtonKind-sc-1vhfpnt-0 cWvYKj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 hIPATj"
             kind="[object Object]"
             type="button"
           >
@@ -5092,6 +5132,10 @@ exports[`Pagination should display the correct last page based on items length
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
@@ -5542,6 +5586,10 @@ exports[`Pagination should render correct numEdgePages 1`] = `
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
@@ -6049,6 +6097,10 @@ exports[`Pagination should render correct numMiddlePages when even 1`] = `
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6507,6 +6559,10 @@ exports[`Pagination should render correct numMiddlePages when odd 1`] = `
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
@@ -7075,6 +7131,10 @@ exports[`Pagination should set numMiddlePages = 1 if user provides value < 1 1`]
   border-radius: 4px;
 }
 
+.c6:hover {
+  padding: 4px;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7585,6 +7645,10 @@ exports[`Pagination should set page to last page if page prop > total possible
 .c6 {
   padding: 4px;
   border-radius: 4px;
+}
+
+.c6:hover {
+  padding: 4px;
 }
 
 .c4 {
