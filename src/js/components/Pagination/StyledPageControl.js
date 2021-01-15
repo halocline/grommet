@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Button } from '../Button';
 
-const BUTTON_STATES = ['default', 'active', 'disabled', 'hover', 'selected'];
+const BUTTON_STATES = ['normal', 'active', 'disabled', 'hover'];
 const defaultStyles = {
   border: {
     radius: '4px',
@@ -14,7 +14,7 @@ const defaultStyles = {
 const buildButtonStyle = (buttonTheme, kind) => {
   const style = buttonTheme[kind];
   BUTTON_STATES.forEach(state => {
-    if (state !== 'default') style[state] = buttonTheme[state][kind];
+    if (state !== 'normal') style[state] = buttonTheme[state][kind];
   });
   return style;
 };
@@ -73,19 +73,16 @@ export const StyledPaginationButton = styled(Button)`
         ? buildButtonStyle(props.theme.button, props.kind)
         : props.kind;
     const adjustedPadding = calcAdjustedPadding(buttonStyle, defaultStyles.pad);
-    let buttonState = 'default';
+    let buttonState = 'normal';
     if (props.active) buttonState = 'active';
-    else if (props.selected) buttonState = 'selected';
     else if (props.disabled) buttonState = 'disabled';
 
     return `
       padding: ${adjustedPadding[buttonState].pad};
-      :hover {
-        padding: ${
-          buttonState === 'disabled'
-            ? adjustedPadding[buttonState].pad
-            : adjustedPadding.hover.pad
-        };
+      ${
+        buttonState === 'disabled'
+          ? ''
+          : `:hover { padding: ${adjustedPadding.hover.pad}; }`
       }
     `;
   }}
