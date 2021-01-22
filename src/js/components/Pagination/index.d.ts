@@ -11,9 +11,9 @@ export interface PaginationProps {
   alignSelf?: AlignSelfType;
   gridArea?: GridAreaType;
   margin?: MarginType;
-  numEdgePages?: number;
-  numItems?: number;
-  numMiddlePages?: number;
+  numberEdgePages?: number;
+  numberItems?: number;
+  numberMiddlePages?: number;
   onChange?: (...args: any[]) => void;
   page?: number;
   size?: 'small' | 'medium' | 'large';

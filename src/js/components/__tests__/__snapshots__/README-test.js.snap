@@ -6766,7 +6766,8 @@ string
 **paginate**
 
 Whether to paginate the data. If providing an object, any Box props or 
-      Pagination props are valid.
+      Pagination props are valid and will be used to style the underlying 
+      pagination component.
 
 \`\`\`
 boolean
@@ -11211,7 +11212,8 @@ string
 **paginate**
 
 Whether to paginate the data. If providing an object, any Box props or 
-    Pagination props are valid.
+    Pagination props are valid and will be used to style the underlying 
+    pagination component.
 
 \`\`\`
 boolean
@@ -12568,7 +12570,7 @@ xlarge
 string
 \`\`\`
 
-**numEdgePages**
+**numberEdgePages**
 
 The number of page buttons visible at the start and end of page 
         range. Defaults to \`1\`.
@@ -12577,7 +12579,7 @@ The number of page buttons visible at the start and end of page
 number
 \`\`\`
 
-**numItems**
+**numberItems**
 
 The number of items to paginate.
 
@@ -12585,7 +12587,7 @@ The number of items to paginate.
 number
 \`\`\`
 
-**numMiddlePages**
+**numberMiddlePages**
 
 The number of page buttons visible in the middle of the controls. Defaults to \`3\`.
 
