@@ -970,6 +970,7 @@ export const generate = (baseSpacing = 24, scale = 6) => {
       },
       control: {
         // extend: undefined,
+        pad: '4px',
         size: {
           small: {
             border: {

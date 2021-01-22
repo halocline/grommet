@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 import { Button } from '../Button';
+import { Text } from '../Text';
 
 const BUTTON_STATES = ['normal', 'active', 'disabled', 'hover'];
-const defaultStyles = {
-  pad: '4px',
-};
 
 // Assemble button theme object for each button state
 const buildButtonStyle = (buttonTheme, kind) => {
@@ -40,7 +38,7 @@ const sizeStyle = props => {
   const style =
     props.theme.pagination.control &&
     props.theme.pagination.control.size &&
-    props.theme.pagination.control.size[props.sizeProp || 'medium'];
+    props.theme.pagination.control.size[props.controlSize || 'medium'];
 
   return style
     ? {
@@ -64,7 +62,10 @@ export const StyledPaginationButton = styled(Button)`
       typeof props.kind === 'string'
         ? buildButtonStyle(props.theme.button, props.kind)
         : props.kind;
-    const adjustedPadding = calcAdjustedPadding(buttonStyle, defaultStyles.pad);
+    const adjustedPadding = calcAdjustedPadding(
+      buttonStyle,
+      props.theme.pagination.control.pad,
+    );
     let buttonState = 'normal';
     if (props.active) buttonState = 'active';
     else if (props.disabled) buttonState = 'disabled';
@@ -93,4 +94,10 @@ export const StyledContainer = styled.div`
   ${props => sizeStyle(props).container};
   ${props =>
     props.theme.pagination.control && props.theme.pagination.control.extend};
+`;
+
+export const StyledSeparator = styled(Text)`
+  font-weight: bold;
+  ${props => `font-size: ${sizeStyle(props).content.fontSize}`};
+  ${props => `line-height: ${sizeStyle(props).content.lineHeight}`};
 `;

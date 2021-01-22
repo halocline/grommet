@@ -107,12 +107,6 @@ exports[`Pagination should allow user to control page via state with page +
   width: 3px;
 }
 
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c9 {
   display: inline-block;
   box-sizing: border-box;
@@ -236,6 +230,11 @@ exports[`Pagination should allow user to control page via state with page +
   border: 0;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -268,6 +267,12 @@ exports[`Pagination should allow user to control page via state with page +
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -408,7 +413,7 @@ exports[`Pagination should allow user to control page via state with page +
           class="c4"
         >
           <span
-            class="c10"
+            class="c10 c11"
           >
             …
           </span>
@@ -495,7 +500,7 @@ exports[`Pagination should apply custom theme 1`] = `
   stroke: none;
 }
 
-.c14 {
+.c15 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -506,25 +511,25 @@ exports[`Pagination should apply custom theme 1`] = `
   stroke: #000000;
 }
 
-.c14 g {
+.c15 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c14 *:not([stroke])[fill="none"] {
+.c15 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c14 *[stroke*="#"],
-.c14 *[STROKE*="#"] {
+.c15 *[stroke*="#"],
+.c15 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c14 *[fill-rule],
-.c14 *[FILL-RULE],
-.c14 *[fill*="#"],
-.c14 *[FILL*="#"] {
+.c15 *[fill-rule],
+.c15 *[FILL-RULE],
+.c15 *[fill*="#"],
+.c15 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -598,12 +603,6 @@ exports[`Pagination should apply custom theme 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 3px;
-}
-
-.c13 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .c6 {
@@ -786,6 +785,11 @@ exports[`Pagination should apply custom theme 1`] = `
   border: 0;
 }
 
+.c13 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c7 {
   padding: 4px;
   font-size: 18px;
@@ -830,6 +834,12 @@ exports[`Pagination should apply custom theme 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c14 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c2 {
@@ -976,7 +986,7 @@ exports[`Pagination should apply custom theme 1`] = `
           class="c5"
         >
           <span
-            class="c13"
+            class="c13 c14"
           >
             …
           </span>
@@ -1010,7 +1020,7 @@ exports[`Pagination should apply custom theme 1`] = `
           >
             <svg
               aria-label="Next"
-              class="c14"
+              class="c15"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -1063,7 +1073,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
   stroke: none;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -1074,25 +1084,25 @@ exports[`Pagination should disable next button if on last page 1`] = `
   stroke: #666666;
 }
 
-.c13 g {
+.c14 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c13 *:not([stroke])[fill="none"] {
+.c14 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c13 *[stroke*="#"],
-.c13 *[STROKE*="#"] {
+.c14 *[stroke*="#"],
+.c14 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c13 *[fill-rule],
-.c13 *[FILL-RULE],
-.c13 *[fill*="#"],
-.c13 *[FILL*="#"] {
+.c14 *[fill-rule],
+.c14 *[FILL-RULE],
+.c14 *[fill*="#"],
+.c14 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -1168,12 +1178,6 @@ exports[`Pagination should disable next button if on last page 1`] = `
   width: 3px;
 }
 
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -1234,7 +1238,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
   border: 0;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -1269,35 +1273,35 @@ exports[`Pagination should disable next button if on last page 1`] = `
   flex: 1 0 auto;
 }
 
-.c10 > svg {
+.c11 > svg {
   vertical-align: bottom;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: rgba(51,51,51,0.06274509803921569);
 }
 
-.c10:focus {
+.c11:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus > circle,
-.c10:focus > ellipse,
-.c10:focus > line,
-.c10:focus > path,
-.c10:focus > polygon,
-.c10:focus > polyline,
-.c10:focus > rect {
+.c11:focus > circle,
+.c11:focus > ellipse,
+.c11:focus > line,
+.c11:focus > path,
+.c11:focus > polygon,
+.c11:focus > polyline,
+.c11:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus::-moz-focus-inner {
+.c11:focus::-moz-focus-inner {
   border: 0;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -1330,28 +1334,33 @@ exports[`Pagination should disable next button if on last page 1`] = `
   flex: 1 0 auto;
 }
 
-.c11 > svg {
+.c12 > svg {
   vertical-align: bottom;
 }
 
-.c11:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c11:focus > circle,
-.c11:focus > ellipse,
-.c11:focus > line,
-.c11:focus > path,
-.c11:focus > polygon,
-.c11:focus > polyline,
-.c11:focus > rect {
+.c12:focus > circle,
+.c12:focus > ellipse,
+.c12:focus > line,
+.c12:focus > path,
+.c12:focus > polygon,
+.c12:focus > polyline,
+.c12:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c11:focus::-moz-focus-inner {
+.c12:focus::-moz-focus-inner {
   border: 0;
+}
+
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -1370,7 +1379,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
   vertical-align: middle;
 }
 
-.c12 {
+.c13 {
   padding: 4px;
   font-size: 18px;
   line-height: 24px;
@@ -1378,7 +1387,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
   border-width: 2px;
 }
 
-.c12 > svg {
+.c13 > svg {
   vertical-align: middle;
 }
 
@@ -1398,6 +1407,12 @@ exports[`Pagination should disable next button if on last page 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c10 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -1477,7 +1492,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -1551,7 +1566,7 @@ exports[`Pagination should disable next button if on last page 1`] = `
           <button
             aria-current="page"
             aria-label="Go to page 24"
-            class="c10 c6"
+            class="c11 c6"
             kind="[object Object]"
             type="button"
           >
@@ -1567,14 +1582,14 @@ exports[`Pagination should disable next button if on last page 1`] = `
           <button
             aria-disabled="true"
             aria-label="Go to next page"
-            class="c11 c12"
+            class="c12 c13"
             disabled=""
             kind="[object Object]"
             type="button"
           >
             <svg
               aria-label="Next"
-              class="c13"
+              class="c14"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -2671,7 +2686,7 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   stroke: none;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -2682,25 +2697,25 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   stroke: #000000;
 }
 
-.c13 g {
+.c14 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c13 *:not([stroke])[fill="none"] {
+.c14 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c13 *[stroke*="#"],
-.c13 *[STROKE*="#"] {
+.c14 *[stroke*="#"],
+.c14 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c13 *[fill-rule],
-.c13 *[FILL-RULE],
-.c13 *[fill*="#"],
-.c13 *[FILL*="#"] {
+.c14 *[fill-rule],
+.c14 *[FILL-RULE],
+.c14 *[fill*="#"],
+.c14 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -2774,12 +2789,6 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 3px;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .c5 {
@@ -2962,6 +2971,11 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   border: 0;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -3006,6 +3020,12 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c13 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -3148,7 +3168,7 @@ exports[`Pagination should disable previous button if on first page 1`] = `
           class="c4"
         >
           <span
-            class="c12"
+            class="c12 c13"
           >
             …
           </span>
@@ -3182,7 +3202,7 @@ exports[`Pagination should disable previous button if on first page 1`] = `
           >
             <svg
               aria-label="Next"
-              class="c13"
+              class="c14"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -3305,12 +3325,6 @@ exports[`Pagination should display next page of results when "next" is
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 3px;
-}
-
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .c9 {
@@ -3436,6 +3450,11 @@ exports[`Pagination should display next page of results when "next" is
   border: 0;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -3468,6 +3487,12 @@ exports[`Pagination should display next page of results when "next" is
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -3608,7 +3633,7 @@ exports[`Pagination should display next page of results when "next" is
           class="c4"
         >
           <span
-            class="c10"
+            class="c10 c11"
           >
             …
           </span>
@@ -3782,7 +3807,7 @@ exports[`Pagination should display next page of results when "next" is
           class="StyledPageControl__StyledContainer-sc-1vlfaez-1 fstAtJ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 JhXAc"
+            class="StyledText-sc-1sadyjn-0 DkZvS StyledPageControl__StyledSeparator-sc-1vlfaez-2 chfAOa"
           >
             …
           </span>
@@ -3941,12 +3966,6 @@ exports[`Pagination should display page 'n' of results when "page n" is
   width: 3px;
 }
 
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c9 {
   display: inline-block;
   box-sizing: border-box;
@@ -4070,6 +4089,11 @@ exports[`Pagination should display page 'n' of results when "page n" is
   border: 0;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -4102,6 +4126,12 @@ exports[`Pagination should display page 'n' of results when "page n" is
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -4242,7 +4272,7 @@ exports[`Pagination should display page 'n' of results when "page n" is
           class="c4"
         >
           <span
-            class="c10"
+            class="c10 c11"
           >
             …
           </span>
@@ -4401,12 +4431,6 @@ exports[`Pagination should display previous page of results when "previous" is
   width: 3px;
 }
 
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -4530,6 +4554,11 @@ exports[`Pagination should display previous page of results when "previous" is
   border: 0;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -4562,6 +4591,12 @@ exports[`Pagination should display previous page of results when "previous" is
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -4702,7 +4737,7 @@ exports[`Pagination should display previous page of results when "previous" is
           class="c4"
         >
           <span
-            class="c10"
+            class="c10 c11"
           >
             …
           </span>
@@ -4876,7 +4911,7 @@ exports[`Pagination should display previous page of results when "previous" is
           class="StyledPageControl__StyledContainer-sc-1vlfaez-1 fstAtJ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 JhXAc"
+            class="StyledText-sc-1sadyjn-0 DkZvS StyledPageControl__StyledSeparator-sc-1vlfaez-2 chfAOa"
           >
             …
           </span>
@@ -4964,7 +4999,7 @@ exports[`Pagination should display the correct last page based on items length
   stroke: none;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -4975,25 +5010,25 @@ exports[`Pagination should display the correct last page based on items length
   stroke: #000000;
 }
 
-.c13 g {
+.c14 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c13 *:not([stroke])[fill="none"] {
+.c14 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c13 *[stroke*="#"],
-.c13 *[STROKE*="#"] {
+.c14 *[stroke*="#"],
+.c14 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c13 *[fill-rule],
-.c13 *[FILL-RULE],
-.c13 *[fill*="#"],
-.c13 *[FILL*="#"] {
+.c14 *[fill-rule],
+.c14 *[FILL-RULE],
+.c14 *[fill*="#"],
+.c14 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -5067,12 +5102,6 @@ exports[`Pagination should display the correct last page based on items length
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 3px;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .c5 {
@@ -5255,6 +5284,11 @@ exports[`Pagination should display the correct last page based on items length
   border: 0;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -5299,6 +5333,12 @@ exports[`Pagination should display the correct last page based on items length
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c13 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -5441,7 +5481,7 @@ exports[`Pagination should display the correct last page based on items length
           class="c4"
         >
           <span
-            class="c12"
+            class="c12 c13"
           >
             …
           </span>
@@ -5475,7 +5515,7 @@ exports[`Pagination should display the correct last page based on items length
           >
             <svg
               aria-label="Next"
-              class="c13"
+              class="c14"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -5599,12 +5639,6 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
   width: 3px;
 }
 
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -5665,7 +5699,7 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
   border: 0;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -5700,32 +5734,37 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
   flex: 1 0 auto;
 }
 
-.c10 > svg {
+.c11 > svg {
   vertical-align: bottom;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: rgba(51,51,51,0.06274509803921569);
 }
 
-.c10:focus {
+.c11:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus > circle,
-.c10:focus > ellipse,
-.c10:focus > line,
-.c10:focus > path,
-.c10:focus > polygon,
-.c10:focus > polyline,
-.c10:focus > rect {
+.c11:focus > circle,
+.c11:focus > ellipse,
+.c11:focus > line,
+.c11:focus > path,
+.c11:focus > polygon,
+.c11:focus > polyline,
+.c11:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus::-moz-focus-inner {
+.c11:focus::-moz-focus-inner {
   border: 0;
+}
+
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -5760,6 +5799,12 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c10 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -5869,7 +5914,7 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -5898,7 +5943,7 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
           <button
             aria-current="page"
             aria-label="Go to page 10"
-            class="c10 c6"
+            class="c11 c6"
             kind="[object Object]"
             type="button"
           >
@@ -5927,7 +5972,7 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -6115,12 +6160,6 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
   width: 3px;
 }
 
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -6181,7 +6220,7 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
   border: 0;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -6216,32 +6255,37 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
   flex: 1 0 auto;
 }
 
-.c10 > svg {
+.c11 > svg {
   vertical-align: bottom;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: rgba(51,51,51,0.06274509803921569);
 }
 
-.c10:focus {
+.c11:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus > circle,
-.c10:focus > ellipse,
-.c10:focus > line,
-.c10:focus > path,
-.c10:focus > polygon,
-.c10:focus > polyline,
-.c10:focus > rect {
+.c11:focus > circle,
+.c11:focus > ellipse,
+.c11:focus > line,
+.c11:focus > path,
+.c11:focus > polygon,
+.c11:focus > polyline,
+.c11:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus::-moz-focus-inner {
+.c11:focus::-moz-focus-inner {
   border: 0;
+}
+
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -6276,6 +6320,12 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c10 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -6355,7 +6405,7 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -6384,7 +6434,7 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
           <button
             aria-current="page"
             aria-label="Go to page 10"
-            class="c10 c6"
+            class="c11 c6"
             kind="[object Object]"
             type="button"
           >
@@ -6428,7 +6478,7 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -6586,12 +6636,6 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
   width: 3px;
 }
 
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -6652,7 +6696,7 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
   border: 0;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -6687,32 +6731,37 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
   flex: 1 0 auto;
 }
 
-.c10 > svg {
+.c11 > svg {
   vertical-align: bottom;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: rgba(51,51,51,0.06274509803921569);
 }
 
-.c10:focus {
+.c11:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus > circle,
-.c10:focus > ellipse,
-.c10:focus > line,
-.c10:focus > path,
-.c10:focus > polygon,
-.c10:focus > polyline,
-.c10:focus > rect {
+.c11:focus > circle,
+.c11:focus > ellipse,
+.c11:focus > line,
+.c11:focus > path,
+.c11:focus > polygon,
+.c11:focus > polyline,
+.c11:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus::-moz-focus-inner {
+.c11:focus::-moz-focus-inner {
   border: 0;
+}
+
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -6747,6 +6796,12 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c10 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -6826,7 +6881,7 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -6870,7 +6925,7 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
           <button
             aria-current="page"
             aria-label="Go to page 10"
-            class="c10 c6"
+            class="c11 c6"
             kind="[object Object]"
             type="button"
           >
@@ -6914,7 +6969,7 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -7001,7 +7056,7 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   stroke: none;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -7012,25 +7067,25 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   stroke: #000000;
 }
 
-.c13 g {
+.c14 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c13 *:not([stroke])[fill="none"] {
+.c14 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c13 *[stroke*="#"],
-.c13 *[STROKE*="#"] {
+.c14 *[stroke*="#"],
+.c14 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c13 *[fill-rule],
-.c13 *[FILL-RULE],
-.c13 *[fill*="#"],
-.c13 *[FILL*="#"] {
+.c14 *[fill-rule],
+.c14 *[FILL-RULE],
+.c14 *[fill*="#"],
+.c14 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -7104,12 +7159,6 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 3px;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
 }
 
 .c5 {
@@ -7292,6 +7341,11 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   border: 0;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   padding: 4px;
   font-size: 18px;
@@ -7336,6 +7390,12 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c13 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -7448,7 +7508,7 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
           class="c4"
         >
           <span
-            class="c12"
+            class="c12 c13"
           >
             …
           </span>
@@ -7482,7 +7542,7 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
           >
             <svg
               aria-label="Next"
-              class="c13"
+              class="c14"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -7536,7 +7596,7 @@ exports[`Pagination should set page to last page if page prop > total possible
   stroke: none;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -7547,25 +7607,25 @@ exports[`Pagination should set page to last page if page prop > total possible
   stroke: #666666;
 }
 
-.c13 g {
+.c14 g {
   fill: inherit;
   stroke: inherit;
 }
 
-.c13 *:not([stroke])[fill="none"] {
+.c14 *:not([stroke])[fill="none"] {
   stroke-width: 0;
 }
 
-.c13 *[stroke*="#"],
-.c13 *[STROKE*="#"] {
+.c14 *[stroke*="#"],
+.c14 *[STROKE*="#"] {
   stroke: inherit;
   fill: none;
 }
 
-.c13 *[fill-rule],
-.c13 *[FILL-RULE],
-.c13 *[fill*="#"],
-.c13 *[FILL*="#"] {
+.c14 *[fill-rule],
+.c14 *[FILL-RULE],
+.c14 *[fill*="#"],
+.c14 *[FILL*="#"] {
   fill: inherit;
   stroke: none;
 }
@@ -7641,12 +7701,6 @@ exports[`Pagination should set page to last page if page prop > total possible
   width: 3px;
 }
 
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -7707,7 +7761,7 @@ exports[`Pagination should set page to last page if page prop > total possible
   border: 0;
 }
 
-.c10 {
+.c11 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -7742,35 +7796,35 @@ exports[`Pagination should set page to last page if page prop > total possible
   flex: 1 0 auto;
 }
 
-.c10 > svg {
+.c11 > svg {
   vertical-align: bottom;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: rgba(51,51,51,0.06274509803921569);
 }
 
-.c10:focus {
+.c11:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus > circle,
-.c10:focus > ellipse,
-.c10:focus > line,
-.c10:focus > path,
-.c10:focus > polygon,
-.c10:focus > polyline,
-.c10:focus > rect {
+.c11:focus > circle,
+.c11:focus > ellipse,
+.c11:focus > line,
+.c11:focus > path,
+.c11:focus > polygon,
+.c11:focus > polyline,
+.c11:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c10:focus::-moz-focus-inner {
+.c11:focus::-moz-focus-inner {
   border: 0;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
@@ -7803,28 +7857,33 @@ exports[`Pagination should set page to last page if page prop > total possible
   flex: 1 0 auto;
 }
 
-.c11 > svg {
+.c12 > svg {
   vertical-align: bottom;
 }
 
-.c11:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c11:focus > circle,
-.c11:focus > ellipse,
-.c11:focus > line,
-.c11:focus > path,
-.c11:focus > polygon,
-.c11:focus > polyline,
-.c11:focus > rect {
+.c12:focus > circle,
+.c12:focus > ellipse,
+.c12:focus > line,
+.c12:focus > path,
+.c12:focus > polygon,
+.c12:focus > polyline,
+.c12:focus > rect {
   outline: none;
   box-shadow: 0 0 2px 2px #6FFFB0;
 }
 
-.c11:focus::-moz-focus-inner {
+.c12:focus::-moz-focus-inner {
   border: 0;
+}
+
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -7843,7 +7902,7 @@ exports[`Pagination should set page to last page if page prop > total possible
   vertical-align: middle;
 }
 
-.c12 {
+.c13 {
   padding: 4px;
   font-size: 18px;
   line-height: 24px;
@@ -7851,7 +7910,7 @@ exports[`Pagination should set page to last page if page prop > total possible
   border-width: 2px;
 }
 
-.c12 > svg {
+.c13 > svg {
   vertical-align: middle;
 }
 
@@ -7871,6 +7930,12 @@ exports[`Pagination should set page to last page if page prop > total possible
   max-width: 100%;
   height: 36px;
   min-width: 36px;
+}
+
+.c10 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width:768px) {
@@ -7950,7 +8015,7 @@ exports[`Pagination should set page to last page if page prop > total possible
           class="c4"
         >
           <span
-            class="c9"
+            class="c9 c10"
           >
             …
           </span>
@@ -8024,7 +8089,7 @@ exports[`Pagination should set page to last page if page prop > total possible
           <button
             aria-current="page"
             aria-label="Go to page 10"
-            class="c10 c6"
+            class="c11 c6"
             kind="[object Object]"
             type="button"
           >
@@ -8040,14 +8105,14 @@ exports[`Pagination should set page to last page if page prop > total possible
           <button
             aria-disabled="true"
             aria-label="Go to next page"
-            class="c11 c12"
+            class="c12 c13"
             disabled=""
             kind="[object Object]"
             type="button"
           >
             <svg
               aria-label="Next"
-              class="c13"
+              class="c14"
               viewBox="0 0 24 24"
             >
               <polyline

@@ -31,7 +31,6 @@ import { Box } from '../components/Box';
 import { Text, TextProps } from '../components/Text';
 import { LayerPositionType } from '../components/Layer';
 import { DropProps } from '../components/Drop';
-import { string } from 'prop-types';
 
 export declare const base: DeepReadonly<ThemeType>;
 export declare const generate: (
@@ -968,6 +967,7 @@ export interface ThemeType {
     };
     control?: {
       extend?: ExtendType;
+      pad?: PadType;
       size?: {
         small?: {
           border?: {
@@ -977,7 +977,6 @@ export interface ThemeType {
           font?: {
             size?: string;
             height?: string;
-            maxWidth?: string;
           };
           height?: string;
           width?: string;
@@ -990,7 +989,6 @@ export interface ThemeType {
           font?: {
             size?: string;
             height?: string;
-            maxWidth?: string;
           };
           height?: string;
           width?: string;
@@ -1003,7 +1001,6 @@ export interface ThemeType {
           font?: {
             size?: string;
             height?: string;
-            maxWidth?: string;
           };
           height?: string;
           width?: string;

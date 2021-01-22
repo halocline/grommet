@@ -5998,6 +5998,7 @@ string",
       },
       Object {
         "defaultValue": "medium",
+        "description": "Specifies what size the pagination control buttons should be.",
         "format": "small
 medium
 large",

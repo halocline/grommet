@@ -173,7 +173,7 @@ number
 
 **size**
 
-undefined Defaults to `medium`.
+Specifies what size the pagination control buttons should be. Defaults to `medium`.
 
 ```
 small
