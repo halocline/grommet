@@ -5996,6 +5996,13 @@ string",
         "name": "page",
       },
       Object {
+        "defaultValue": "medium",
+        "format": "small
+medium
+large",
+        "name": "size",
+      },
+      Object {
         "defaultValue": 10,
         "description": "The number of items per page.",
         "format": "number",
