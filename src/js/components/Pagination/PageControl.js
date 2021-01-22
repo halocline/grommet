@@ -4,11 +4,16 @@ import { ThemeContext } from 'styled-components';
 import { Text } from '../Text';
 import { StyledPaginationButton, StyledContainer } from './StyledPageControl';
 
-export const PageControl = ({ control, separator, ...rest }) => {
+export const PageControl = ({
+  control,
+  separator,
+  size: sizeProp,
+  ...rest
+}) => {
   const theme = useContext(ThemeContext);
 
   return (
-    <StyledContainer as="li">
+    <StyledContainer as="li" sizeProp={sizeProp}>
       {separator ? (
         <Text weight="bold">&#8230;</Text>
       ) : (
@@ -17,6 +22,7 @@ export const PageControl = ({ control, separator, ...rest }) => {
           fill
           kind={theme.pagination.button}
           label={control}
+          sizeProp={sizeProp}
           {...rest}
         />
       )}

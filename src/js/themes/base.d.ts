@@ -31,6 +31,7 @@ import { Box } from '../components/Box';
 import { Text, TextProps } from '../components/Text';
 import { LayerPositionType } from '../components/Layer';
 import { DropProps } from '../components/Drop';
+import { string } from 'prop-types';
 
 export declare const base: DeepReadonly<ThemeType>;
 export declare const generate: (
@@ -955,6 +956,64 @@ export interface ThemeType {
     container?: {
       extend: ExtendType;
     };
+    button?: {
+      color?: ColorType;
+      active?: {
+        background?: {
+          color?: ColorType;
+        };
+      };
+      hover?: {
+        background?: {
+          color?: ColorType;
+        };
+        color?: ColorType;
+      };
+    };
+    control?: {
+      extend?: ExtendType;
+      size?: {
+        small?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+            maxWidth?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+        medium?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+            maxWidth?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+        large?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+            maxWidth?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+      };
+    };
     controls?: {
       align?: AlignContentType;
       direction?: DirectionType;
@@ -963,11 +1022,9 @@ export interface ThemeType {
       margin?: MarginType;
     };
     icons?: {
-      color: ColorType;
-      first: React.ReactNode;
-      last: React.ReactNode;
-      next: React.ReactNode;
-      previous: React.ReactNode;
+      color?: ColorType;
+      next?: React.ReactNode;
+      previous?: React.ReactNode;
     };
   };
   paragraph?: {
