@@ -73,7 +73,7 @@ export const themeDoc = {
     defaultValue: 'text-strong',
   },
   'pagination.button.hover.background.color': {
-    description: 'Background color when the button when hovered.',
+    description: 'Background color of the button when hovered.',
     type: 'string | { dark: string, light: string }',
     defaultValue: 'background-contrast',
   },
@@ -83,8 +83,8 @@ export const themeDoc = {
     defaultValue: undefined,
   },
   'pagination.container': {
-    description: `Any valid Box property affecting the Box 
-    wrapping the pagination controls.`,
+    description: `Any valid Box props for the Box wrapping the 
+    pagination controls.`,
     type: 'object',
   },
   'pagination.container.extend': {
@@ -93,11 +93,11 @@ export const themeDoc = {
     type: 'string | (props) => {}',
   },
   'pagination.control.extend': {
-    description: `Any additional style for each pagination control.`,
+    description: `Any additional style for each control.`,
     type: 'string | (props) => {}',
   },
   'pagination.control.pad': {
-    description: `Padding around each pagination control's label.`,
+    description: `Padding around each control's label.`,
     type: 'string | object',
     defaultValue: '4px',
   },
@@ -122,12 +122,12 @@ export const themeDoc = {
     defaultValue: '20px',
   },
   'pagination.control.size.small.height': {
-    description: `The height for each pagination control.`,
+    description: `The height for each control.`,
     type: 'string',
     defaultValue: '30px',
   },
   'pagination.control.size.small.width': {
-    description: `The minimum width for each pagination control. 
+    description: `The minimum width for each control. 
     Width will scale up fitting the control's label.`,
     type: 'string',
     defaultValue: '30px',
@@ -153,12 +153,12 @@ export const themeDoc = {
     defaultValue: '24px',
   },
   'pagination.control.size.medium.height': {
-    description: `The height for each pagination control.`,
+    description: `The height for each control.`,
     type: 'string',
     defaultValue: '36px',
   },
   'pagination.control.size.medium.width': {
-    description: `The minimum width for each pagination control. 
+    description: `The minimum width for each control. 
     Width will scale up fitting the control's label.`,
     type: 'string',
     defaultValue: '36px',
@@ -184,12 +184,12 @@ export const themeDoc = {
     defaultValue: '28px',
   },
   'pagination.control.size.large.height': {
-    description: `The height for each pagination control.`,
+    description: `The height for each control.`,
     type: 'string',
     defaultValue: '48px',
   },
   'pagination.control.size.large.width': {
-    description: `The minimum width for each pagination control. 
+    description: `The minimum width for each control. 
     Width will scale up fitting the control's label.`,
     type: 'string',
     defaultValue: '48px',
@@ -222,7 +222,7 @@ export const themeDoc = {
     defaultValue: 'none',
   },
   'pagination.icons.color': {
-    description: `Color to fill the controls' icons.`,
+    description: `The color used for the icon.`,
     type: 'string | { dark: string, light: string }',
   },
   'pagination.icons.next': {

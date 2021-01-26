@@ -219,7 +219,7 @@ text-strong
 
 **pagination.button.hover.background.color**
 
-Background color when the button when hovered. Expects `string | { dark: string, light: string }`.
+Background color of the button when hovered. Expects `string | { dark: string, light: string }`.
 
 Defaults to
 
@@ -239,8 +239,8 @@ undefined
 
 **pagination.container**
 
-Any valid Box property affecting the Box 
-    wrapping the pagination controls. Expects `object`.
+Any valid Box props for the Box wrapping the 
+    pagination controls. Expects `object`.
 
 Defaults to
 
@@ -261,7 +261,7 @@ undefined
 
 **pagination.control.extend**
 
-Any additional style for each pagination control. Expects `string | (props) => {}`.
+Any additional style for each control. Expects `string | (props) => {}`.
 
 Defaults to
 
@@ -271,7 +271,7 @@ undefined
 
 **pagination.control.pad**
 
-Padding around each pagination control's label. Expects `string | object`.
+Padding around each control's label. Expects `string | object`.
 
 Defaults to
 
@@ -321,7 +321,7 @@ Defaults to
 
 **pagination.control.size.small.height**
 
-The height for each pagination control. Expects `string`.
+The height for each control. Expects `string`.
 
 Defaults to
 
@@ -331,7 +331,7 @@ Defaults to
 
 **pagination.control.size.small.width**
 
-The minimum width for each pagination control. 
+The minimum width for each control. 
     Width will scale up fitting the control's label. Expects `string`.
 
 Defaults to
@@ -382,7 +382,7 @@ Defaults to
 
 **pagination.control.size.medium.height**
 
-The height for each pagination control. Expects `string`.
+The height for each control. Expects `string`.
 
 Defaults to
 
@@ -392,7 +392,7 @@ Defaults to
 
 **pagination.control.size.medium.width**
 
-The minimum width for each pagination control. 
+The minimum width for each control. 
     Width will scale up fitting the control's label. Expects `string`.
 
 Defaults to
@@ -443,7 +443,7 @@ Defaults to
 
 **pagination.control.size.large.height**
 
-The height for each pagination control. Expects `string`.
+The height for each control. Expects `string`.
 
 Defaults to
 
@@ -453,7 +453,7 @@ Defaults to
 
 **pagination.control.size.large.width**
 
-The minimum width for each pagination control. 
+The minimum width for each control. 
     Width will scale up fitting the control's label. Expects `string`.
 
 Defaults to
@@ -516,7 +516,7 @@ none
 
 **pagination.icons.color**
 
-Color to fill the controls' icons. Expects `string | { dark: string, light: string }`.
+The color used for the icon. Expects `string | { dark: string, light: string }`.
 
 Defaults to
 
