@@ -329,6 +329,7 @@ const DataTable = ({
             primaryProperty={primaryProperty}
             rowProps={rowProps}
             selected={selected}
+            show={!paginate ? showProp : undefined}
             size={size}
             step={step}
           />
