@@ -99,13 +99,17 @@ const adjustPadStyle = (pad, width) => {
 };
 
 // build up CSS from basic to specific based on the supplied sub-object paths
-const kindStyle = ({ colorValue, sizeProp: size, themePaths, theme }) => {
+const kindStyle = ({ colorValue, kind, sizeProp: size, themePaths, theme }) => {
   const styles = [];
+
+  // caller has specified a themeObj to use for styling
+  // relevant for cases like pagination which looks to theme.pagination.button
+  const themeObj = typeof kind === 'object' ? kind : undefined;
 
   const pad = padFromTheme(size, theme);
 
   themePaths.base.forEach(themePath => {
-    const obj = getPath(theme, `button.${themePath}`);
+    const obj = getPath(themeObj || theme.button, themePath);
 
     if (obj) {
       styles.push(kindPartStyles(obj, theme, colorValue));
@@ -118,8 +122,16 @@ const kindStyle = ({ colorValue, sizeProp: size, themePaths, theme }) => {
     }
   });
 
+  // do the styling from the root of the object if caller passes one
+  if (!themePaths.base.length && themeObj) {
+    const obj = themeObj;
+    if (obj) {
+      styles.push(kindPartStyles(obj, theme, colorValue));
+    }
+  }
+
   themePaths.hover.forEach(themePath => {
-    const obj = getPath(theme, `button.${themePath}`);
+    const obj = getPath(themeObj || theme.button, themePath);
 
     if (obj) {
       const partStyles = kindPartStyles(obj, theme);
@@ -193,10 +205,7 @@ const plainStyle = () => css`
   }
 `;
 
-const StyledButtonKind = styled.button.attrs(() => ({
-  // don't let kind attribute leak to DOM
-  kind: undefined,
-}))`
+const StyledButtonKind = styled.button`
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;

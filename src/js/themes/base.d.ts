@@ -13,6 +13,7 @@ import {
   BreakpointSize,
   ColorType,
   DeepReadonly,
+  DirectionType,
   ElevationType,
   GapType,
   GraphColorsType,
@@ -21,6 +22,7 @@ import {
   RoundType,
   PadType,
   PropsOf,
+  AlignContentType,
 } from '../utils';
 
 import { BoxProps } from '../components/Box';
@@ -612,6 +614,7 @@ export interface ThemeType {
     body?: {
       extend?: ExtendType;
     };
+    container?: BoxProps;
     header?: {
       background?: BackgroundType;
       border?: BorderType;
@@ -911,6 +914,7 @@ export interface ThemeType {
     zIndex?: string;
   };
   list?: {
+    container?: BoxProps;
     item?: {
       background?: BackgroundType;
       border?:
@@ -947,6 +951,77 @@ export interface ThemeType {
     color?: ColorType;
     colors?: GraphColorsType;
     extend?: ExtendType;
+  };
+  pagination?: {
+    button?: {
+      active?: {
+        background?: {
+          color?: ColorType;
+        };
+      };
+      color?: ColorType;
+      hover?: {
+        background?: {
+          color?: ColorType;
+        };
+        color?: ColorType;
+      };
+    };
+    container?: BoxProps;
+    control?: {
+      extend?: ExtendType;
+      pad?: PadType;
+      size?: {
+        small?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+        medium?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+        large?: {
+          border?: {
+            radius?: string;
+            width?: string;
+          };
+          font?: {
+            size?: string;
+            height?: string;
+          };
+          height?: string;
+          width?: string;
+        };
+      };
+    };
+    controls?: {
+      align?: AlignContentType;
+      direction?: DirectionType;
+      gap?: GapType;
+      pad?: PadType;
+      margin?: MarginType;
+    };
+    icons?: {
+      color?: ColorType;
+      next?: React.ReactNode;
+      previous?: React.ReactNode;
+    };
   };
   paragraph?: {
     extend?: ExtendType;

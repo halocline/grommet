@@ -105,6 +105,13 @@ export const doc = List => {
       PropTypes.string,
       PropTypes.shape(padShapeSides),
     ]).description(`Item padding.`),
+    paginate: PropTypes.oneOfType([PropTypes.bool, PropTypes.object])
+      .description(
+        `Whether to paginate the data. If providing an object, any Box props or 
+    Pagination props are valid and will be used to style the underlying 
+    pagination component.`,
+      )
+      .defaultValue(undefined),
     primaryKey: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.func,
@@ -123,6 +130,16 @@ export const doc = List => {
       will be called with the current data item object and should return
       a React element that will be rendered as the secondary content.`,
     ),
+    show: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.shape({ page: PropTypes.number }),
+    ])
+      .description(
+        `If provided as a number, the index of an item to show. If using 
+        paginate and provided as an object in the format of show={{ page: 2 }}, 
+        the default page to show.`,
+      )
+      .defaultValue(undefined),
     step: PropTypes.number
       .description('How many items to render at a time.')
       .defaultValue(50),
@@ -166,5 +183,11 @@ export const themeDoc = {
     description: 'Any additional style for the list items.',
     type: 'string | (props) => {}',
     defaultValue: undefined,
+  },
+  'list.pagination': {
+    description: `If paginating, any valid Box props to style the pagination 
+    component.`,
+    type: 'object',
+    defaultValue: `margin: { top: 'xsmall' }`,
   },
 };
