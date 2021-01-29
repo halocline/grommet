@@ -43,9 +43,6 @@ const Pagination = forwardRef(
       Math.min(pageProp, totalPages) || 1,
     );
 
-    const itemsBegin = step * (activePage - 1) + 1;
-    const itemsEnd = itemsBegin + step - 1;
-
     /* Define page indices to display */
     const beginPages = getPageIndices(1, Math.min(numberEdgePages, totalPages));
     const endPages = getPageIndices(
@@ -181,6 +178,8 @@ const Pagination = forwardRef(
       ...navProps[control],
     }));
 
+    const itemsBegin = step * (activePage - 1) + 1;
+    const itemsEnd = itemsBegin + step - 1;
     let showSummary;
     if (showSummaryProp === true)
       showSummary = (
@@ -192,7 +191,7 @@ const Pagination = forwardRef(
 
     // only apply these if the caller hasn't already specified their own theming
     // otherwise, let the caller control
-    const showSummaryContainerProps =
+    const showSummaryStyles =
       showSummary && !theme.pagination.container
         ? {
             align: 'center',
@@ -205,7 +204,7 @@ const Pagination = forwardRef(
     return (
       <StyledPaginationContainer
         {...theme.pagination.container}
-        {...showSummaryContainerProps}
+        {...showSummaryStyles}
         {...rest}
       >
         {showSummary}
