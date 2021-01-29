@@ -6044,6 +6044,15 @@ string",
         "name": "page",
       },
       Object {
+        "defaultValue": undefined,
+        "description": "Whether to display a summary of what range of results are 
+      being displayed. If true, this will be displayed in the format of 
+      \\"Showing X - Y of Z\\". Alternately, a custom JSX element can be provided.",
+        "format": "boolean
+element",
+        "name": "showSummary",
+      },
+      Object {
         "defaultValue": "medium",
         "description": "Specifies what size the pagination control buttons should be.",
         "format": "small

@@ -1022,6 +1022,7 @@ export interface ThemeType {
       next?: React.ReactNode;
       previous?: React.ReactNode;
     };
+    nav?: BoxProps;
   };
   paragraph?: {
     extend?: ExtendType;

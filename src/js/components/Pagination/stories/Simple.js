@@ -8,7 +8,7 @@ export const Simple = () => (
     <Box align="start" pad="small" gap="medium">
       <Box>
         <Text>Default</Text>
-        <Pagination numberItems={237} />
+        <Pagination numberItems={237} showSummary />
       </Box>
       <Box>
         <Text>Box Props</Text>
