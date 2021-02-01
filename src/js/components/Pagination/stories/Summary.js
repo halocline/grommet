@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Grommet, Pagination, Select, Text, ThemeContext } from 'grommet';
 import { grommet } from 'grommet/themes';
 
-export const ShowSummary = () => {
+export const Summary = () => {
   const numberItems = 237;
   const [indices, setIndices] = useState([0, 10]);
   const [step, setStep] = useState(10);
@@ -24,8 +24,8 @@ export const ShowSummary = () => {
     <Grommet theme={grommet}>
       <Box align="start" pad="small" gap="medium">
         <Box gap="small" fill="horizontal">
-          <Text weight="bold">showSummary = true</Text>
-          <Pagination numberItems={numberItems} showSummary />
+          <Text weight="bold">summary = true</Text>
+          <Pagination numberItems={numberItems} summary />
         </Box>
         <ThemeContext.Extend
           value={{
@@ -39,12 +39,12 @@ export const ShowSummary = () => {
           }}
         >
           <Box gap="small" fill="horizontal">
-            <Text weight="bold">Custom showSummary</Text>
+            <Text weight="bold">Custom summary</Text>
             <Pagination
               numberItems={numberItems}
               onChange={handleChange}
               step={step}
-              showSummary={
+              summary={
                 <>
                   <Box flex>
                     <Text>

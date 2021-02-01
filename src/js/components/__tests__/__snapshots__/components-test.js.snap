@@ -6050,7 +6050,7 @@ string",
       \\"Showing X - Y of Z\\". Alternately, a custom JSX element can be provided.",
         "format": "boolean
 element",
-        "name": "showSummary",
+        "name": "summary",
       },
       Object {
         "defaultValue": "medium",

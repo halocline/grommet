@@ -16,7 +16,7 @@ export interface PaginationProps {
   numberMiddlePages?: number;
   onChange?: (...args: any[]) => void;
   page?: number;
-  showSummary?: boolean | JSX.Element;
+  summary?: boolean | JSX.Element;
   size?: 'small' | 'medium' | 'large';
   step?: number;
 }

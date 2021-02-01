@@ -28,7 +28,7 @@ const Pagination = forwardRef(
       numberMiddlePages: numberMiddlePagesProp = 3,
       onChange,
       page: pageProp,
-      showSummary: showSummaryProp,
+      summary: summaryProp,
       size,
       step = 10,
       ...rest
@@ -180,19 +180,19 @@ const Pagination = forwardRef(
 
     const itemsBegin = step * (activePage - 1) + 1;
     const itemsEnd = itemsBegin + step - 1;
-    let showSummary;
-    if (showSummaryProp === true)
-      showSummary = (
+    let summary;
+    if (summaryProp === true)
+      summary = (
         <Text>
           Showing {itemsBegin} - {itemsEnd} of {numberItems}
         </Text>
       );
-    else showSummary = showSummaryProp;
+    else summary = summaryProp;
 
     // only apply these if the caller hasn't already specified their own theming
     // otherwise, let the caller control
-    const showSummaryStyles =
-      showSummary && !theme.pagination.container
+    const summaryStyles =
+      summary && !theme.pagination.container
         ? {
             align: 'center',
             fill: 'horizontal',
@@ -204,10 +204,10 @@ const Pagination = forwardRef(
     return (
       <StyledPaginationContainer
         {...theme.pagination.container}
-        {...showSummaryStyles}
+        {...summaryStyles}
         {...rest}
       >
-        {showSummary}
+        {summary}
         <Nav
           a11yTitle={a11yTitle || 'Pagination Navigation'}
           ref={ref}

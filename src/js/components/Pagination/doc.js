@@ -48,7 +48,7 @@ export const doc = Pagination => {
         active page via state.`,
       )
       .defaultValue(undefined),
-    showSummary: PropTypes.oneOfType([PropTypes.bool, PropTypes.element])
+    summary: PropTypes.oneOfType([PropTypes.bool, PropTypes.element])
       .description(
         `Whether to display a summary of what range of results are 
       being displayed. If true, this will be displayed in the format of 

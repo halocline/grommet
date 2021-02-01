@@ -12733,7 +12733,7 @@ The default page. If used with onChange, it can be used to control the
 number
 \`\`\`
 
-**showSummary**
+**summary**
 
 Whether to display a summary of what range of results are 
       being displayed. If true, this will be displayed in the format of 
