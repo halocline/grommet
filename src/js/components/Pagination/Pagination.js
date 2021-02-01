@@ -2,6 +2,7 @@ import React, { forwardRef, useContext, useState } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { Box } from '../Box';
 import { Nav } from '../Nav';
+import { Text } from '../Text';
 import { PageControl } from './PageControl';
 
 const StyledPaginationContainer = styled(Box)`
@@ -27,6 +28,7 @@ const Pagination = forwardRef(
       numberMiddlePages: numberMiddlePagesProp = 3,
       onChange,
       page: pageProp,
+      summary: summaryProp,
       size,
       step = 10,
       ...rest
@@ -176,9 +178,41 @@ const Pagination = forwardRef(
       ...navProps[control],
     }));
 
+    const itemsBegin = step * (activePage - 1) + 1;
+    const itemsEnd = itemsBegin + step - 1;
+    let summary;
+    if (summaryProp === true)
+      summary = (
+        <Text>
+          Showing {itemsBegin} - {itemsEnd} of {numberItems}
+        </Text>
+      );
+    else summary = summaryProp;
+
+    // only apply these if the caller hasn't already specified their own theming
+    // otherwise, let the caller control
+    const summaryStyles =
+      summary && !theme.pagination.container
+        ? {
+            align: 'center',
+            fill: 'horizontal',
+            direction: 'row',
+            justify: 'between',
+          }
+        : undefined;
+
     return (
-      <StyledPaginationContainer {...theme.pagination.container} {...rest}>
-        <Nav a11yTitle={a11yTitle || 'Pagination Navigation'} ref={ref}>
+      <StyledPaginationContainer
+        {...theme.pagination.container}
+        {...summaryStyles}
+        {...rest}
+      >
+        {summary}
+        <Nav
+          a11yTitle={a11yTitle || 'Pagination Navigation'}
+          ref={ref}
+          {...theme.pagination.nav}
+        >
           <Box as="ul" {...theme.pagination.controls}>
             {controls.map(control => (
               <PageControl key={control.a11yTitle} size={size} {...control} />

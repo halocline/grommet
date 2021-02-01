@@ -12733,6 +12733,17 @@ The default page. If used with onChange, it can be used to control the
 number
 \`\`\`
 
+**summary**
+
+Whether to display a summary of what range of results are 
+      being displayed. If true, this will be displayed in the format of 
+      \\"Showing X - Y of Z\\". Alternately, a custom JSX element can be provided.
+
+\`\`\`
+boolean
+element
+\`\`\`
+
 **size**
 
 Specifies what size the pagination control buttons should be. Defaults to \`medium\`.

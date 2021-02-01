@@ -16,7 +16,7 @@ export const Paginated = () => {
           select={select}
           sortable
           step={3}
-          paginate
+          paginate={{ summary: true }}
         />
       </Box>
     </Grommet>

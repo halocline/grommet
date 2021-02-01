@@ -107,6 +107,11 @@ exports[`Pagination should allow user to control page via state with page +
   width: 3px;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c9 {
   display: inline-block;
   box-sizing: border-box;
@@ -228,11 +233,6 @@ exports[`Pagination should allow user to control page via state with page +
 
 .c5:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -571,6 +571,11 @@ exports[`Pagination should apply button kind style when referenced by a string 1
   width: 3px;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -758,11 +763,6 @@ exports[`Pagination should apply button kind style when referenced by a string 1
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -1149,6 +1149,11 @@ exports[`Pagination should apply custom theme 1`] = `
   width: 3px;
 }
 
+.c13 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c6 {
   display: inline-block;
   box-sizing: border-box;
@@ -1327,11 +1332,6 @@ exports[`Pagination should apply custom theme 1`] = `
 
 .c12:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c13 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c7 {
@@ -1722,6 +1722,11 @@ exports[`Pagination should apply size 1`] = `
   width: 3px;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -1900,11 +1905,6 @@ exports[`Pagination should apply size 1`] = `
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -2731,6 +2731,11 @@ exports[`Pagination should disable next button if on last page 1`] = `
   width: 3px;
 }
 
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -2909,11 +2914,6 @@ exports[`Pagination should disable next button if on last page 1`] = `
 
 .c12:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -4344,6 +4344,11 @@ exports[`Pagination should disable previous button if on first page 1`] = `
   width: 3px;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -4522,11 +4527,6 @@ exports[`Pagination should disable previous button if on first page 1`] = `
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -4880,6 +4880,11 @@ exports[`Pagination should display next page of results when "next" is
   width: 3px;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c9 {
   display: inline-block;
   box-sizing: border-box;
@@ -5001,11 +5006,6 @@ exports[`Pagination should display next page of results when "next" is
 
 .c5:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -5519,6 +5519,11 @@ exports[`Pagination should display page 'n' of results when "page n" is
   width: 3px;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c9 {
   display: inline-block;
   box-sizing: border-box;
@@ -5640,11 +5645,6 @@ exports[`Pagination should display page 'n' of results when "page n" is
 
 .c5:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -5984,6 +5984,11 @@ exports[`Pagination should display previous page of results when "previous" is
   width: 3px;
 }
 
+.c10 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -6105,11 +6110,6 @@ exports[`Pagination should display previous page of results when "previous" is
 
 .c9:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c10 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -6657,6 +6657,11 @@ exports[`Pagination should display the correct last page based on items length
   width: 3px;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -6835,11 +6840,6 @@ exports[`Pagination should display the correct last page based on items length
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -7192,6 +7192,11 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
   width: 3px;
 }
 
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -7313,11 +7318,6 @@ exports[`Pagination should render correct numberEdgePages 1`] = `
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -7713,6 +7713,11 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
   width: 3px;
 }
 
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -7834,11 +7839,6 @@ exports[`Pagination should render correct numberMiddlePages when even 1`] = `
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -8189,6 +8189,11 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
   width: 3px;
 }
 
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -8310,11 +8315,6 @@ exports[`Pagination should render correct numberMiddlePages when odd 1`] = `
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -8714,6 +8714,11 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
   width: 3px;
 }
 
+.c12 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -8892,11 +8897,6 @@ exports[`Pagination should set numberMiddlePages = 1 if user provides value < 1 
 
 .c11:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c12 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {
@@ -9254,6 +9254,11 @@ exports[`Pagination should set page to last page if page prop > total possible
   width: 3px;
 }
 
+.c9 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .c5 {
   display: inline-block;
   box-sizing: border-box;
@@ -9432,11 +9437,6 @@ exports[`Pagination should set page to last page if page prop > total possible
 
 .c12:focus::-moz-focus-inner {
   border: 0;
-}
-
-.c9 {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .c6 {

@@ -974,7 +974,7 @@ export const generate = (baseSpacing = 24, scale = 6) => {
       },
       // container: {
       //   // any box props,
-      //   extend: undefined,
+      //   // extend: undefined,
       // },
       control: {
         // extend: undefined,
@@ -1016,6 +1016,9 @@ export const generate = (baseSpacing = 24, scale = 6) => {
         margin: 'none',
         pad: 'none',
       },
+      // nav: {
+      //   // any box props
+      // },
       icons: {
         // color: undefined,
         next: Next,
