@@ -12280,6 +12280,7 @@ exports[`DataTable should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -12339,8 +12340,7 @@ exports[`DataTable should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -12358,10 +12358,6 @@ exports[`DataTable should apply pagination styling 1`] = `
 
 .c20 > svg {
   vertical-align: bottom;
-}
-
-.c20:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c20:focus {
@@ -12400,7 +12396,6 @@ exports[`DataTable should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -12418,10 +12413,6 @@ exports[`DataTable should apply pagination styling 1`] = `
 
 .c22 > svg {
   vertical-align: bottom;
-}
-
-.c22:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c22:focus {
@@ -14200,7 +14191,6 @@ exports[`DataTable should apply pagination styling 1`] = `
               aria-label="Go to previous page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -14228,7 +14218,6 @@ exports[`DataTable should apply pagination styling 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c20 c21"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -14243,7 +14232,6 @@ exports[`DataTable should apply pagination styling 1`] = `
             <button
               aria-label="Go to page 2"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -14258,7 +14246,6 @@ exports[`DataTable should apply pagination styling 1`] = `
             <button
               aria-label="Go to next page"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -14511,6 +14498,7 @@ exports[`DataTable should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -14570,8 +14558,7 @@ exports[`DataTable should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -14589,10 +14576,6 @@ exports[`DataTable should paginate 1`] = `
 
 .c20 > svg {
   vertical-align: bottom;
-}
-
-.c20:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c20:focus {
@@ -14631,7 +14614,6 @@ exports[`DataTable should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -14649,10 +14631,6 @@ exports[`DataTable should paginate 1`] = `
 
 .c22 > svg {
   vertical-align: bottom;
-}
-
-.c22:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c22:focus {
@@ -16425,7 +16403,6 @@ exports[`DataTable should paginate 1`] = `
               aria-label="Go to previous page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -16453,7 +16430,6 @@ exports[`DataTable should paginate 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c20 c21"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -16468,7 +16444,6 @@ exports[`DataTable should paginate 1`] = `
             <button
               aria-label="Go to page 2"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -16483,7 +16458,6 @@ exports[`DataTable should paginate 1`] = `
             <button
               aria-label="Go to next page"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -16736,6 +16710,7 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -16795,8 +16770,7 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -16814,10 +16788,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
 
 .c20 > svg {
   vertical-align: bottom;
-}
-
-.c20:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c20:focus {
@@ -16856,7 +16826,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -16874,10 +16843,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
 
 .c22 > svg {
   vertical-align: bottom;
-}
-
-.c22:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c22:focus {
@@ -17534,7 +17499,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
               aria-label="Go to previous page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -17562,7 +17526,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c20 c21"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -17577,7 +17540,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 2"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -17592,7 +17554,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 3"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               3
@@ -17607,7 +17568,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 4"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               4
@@ -17622,7 +17582,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 5"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               5
@@ -17637,7 +17596,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 6"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               6
@@ -17652,7 +17610,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 7"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               7
@@ -17667,7 +17624,6 @@ exports[`DataTable should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to next page"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -17920,6 +17876,7 @@ exports[`DataTable should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -17979,8 +17936,7 @@ exports[`DataTable should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -17998,10 +17954,6 @@ exports[`DataTable should render new data when page changes 1`] = `
 
 .c20 > svg {
   vertical-align: bottom;
-}
-
-.c20:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c20:focus {
@@ -18040,7 +17992,6 @@ exports[`DataTable should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -18058,10 +18009,6 @@ exports[`DataTable should render new data when page changes 1`] = `
 
 .c22 > svg {
   vertical-align: bottom;
-}
-
-.c22:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c22:focus {
@@ -19834,7 +19781,6 @@ exports[`DataTable should render new data when page changes 1`] = `
               aria-label="Go to previous page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -19862,7 +19808,6 @@ exports[`DataTable should render new data when page changes 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c20 c21"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -19877,7 +19822,6 @@ exports[`DataTable should render new data when page changes 1`] = `
             <button
               aria-label="Go to page 2"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -19892,7 +19836,6 @@ exports[`DataTable should render new data when page changes 1`] = `
             <button
               aria-label="Go to next page"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -23945,8 +23888,7 @@ exports[`DataTable should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to previous page"
-              class="StyledButtonKind-sc-1vhfpnt-0 eRddyj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 dqnbuu StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               <svg
@@ -23972,8 +23914,7 @@ exports[`DataTable should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to page 1"
-              class="StyledButtonKind-sc-1vhfpnt-0 eRddyj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 dqnbuu StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               1
@@ -23988,8 +23929,7 @@ exports[`DataTable should render new data when page changes 2`] = `
             <button
               aria-current="page"
               aria-label="Go to page 2"
-              class="StyledButtonKind-sc-1vhfpnt-0 hbyrhB StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 eXcAgb StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               2
@@ -24004,9 +23944,8 @@ exports[`DataTable should render new data when page changes 2`] = `
             <button
               aria-disabled="true"
               aria-label="Go to next page"
-              class="StyledButtonKind-sc-1vhfpnt-0 fVgacz StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 kcEAcc"
+              class="StyledButtonKind-sc-1vhfpnt-0 UqvBO StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 kcEAcc"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -24259,6 +24198,7 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -24318,8 +24258,7 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -24337,10 +24276,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
 
 .c20 > svg {
   vertical-align: bottom;
-}
-
-.c20:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c20:focus {
@@ -24379,7 +24314,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -24397,10 +24331,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
 
 .c22 > svg {
   vertical-align: bottom;
-}
-
-.c22:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c22:focus {
@@ -26173,7 +26103,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
               aria-label="Go to previous page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -26201,7 +26130,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
               aria-current="page"
               aria-label="Go to page 1"
               class="c20 c21"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -26216,7 +26144,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
             <button
               aria-label="Go to page 2"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -26231,7 +26158,6 @@ exports[`DataTable should show correct item index when "show" is a number 1`] = 
             <button
               aria-label="Go to next page"
               class="c22 c21"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -26466,7 +26392,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -26484,10 +26409,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
 
 .c15 > svg {
   vertical-align: bottom;
-}
-
-.c15:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c15:focus {
@@ -26528,8 +26449,7 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -26547,10 +26467,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
 
 .c19 > svg {
   vertical-align: bottom;
-}
-
-.c19:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c19:focus {
@@ -26589,6 +26505,7 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -28212,7 +28129,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
             <button
               aria-label="Go to previous page"
               class="c15 c16"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -28239,7 +28155,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
             <button
               aria-label="Go to page 1"
               class="c15 c16"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -28255,7 +28170,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
               aria-current="page"
               aria-label="Go to page 2"
               class="c19 c16"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -28272,7 +28186,6 @@ exports[`DataTable should show correct page when "show" is { page: # } 1`] = `
               aria-label="Go to next page"
               class="c20 c21"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg

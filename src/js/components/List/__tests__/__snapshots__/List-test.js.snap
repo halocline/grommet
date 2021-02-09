@@ -2349,6 +2349,7 @@ exports[`List events should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -2408,8 +2409,7 @@ exports[`List events should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -2427,10 +2427,6 @@ exports[`List events should apply pagination styling 1`] = `
 
 .c16 > svg {
   vertical-align: bottom;
-}
-
-.c16:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c16:focus {
@@ -2469,7 +2465,6 @@ exports[`List events should apply pagination styling 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -2487,10 +2482,6 @@ exports[`List events should apply pagination styling 1`] = `
 
 .c18 > svg {
   vertical-align: bottom;
-}
-
-.c18:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c18:focus {
@@ -2928,7 +2919,6 @@ exports[`List events should apply pagination styling 1`] = `
               aria-label="Go to previous page"
               class="c12 c13"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -2956,7 +2946,6 @@ exports[`List events should apply pagination styling 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c16 c17"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -2971,7 +2960,6 @@ exports[`List events should apply pagination styling 1`] = `
             <button
               aria-label="Go to page 2"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -2986,7 +2974,6 @@ exports[`List events should apply pagination styling 1`] = `
             <button
               aria-label="Go to next page"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -3256,6 +3243,7 @@ exports[`List events should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -3315,8 +3303,7 @@ exports[`List events should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -3334,10 +3321,6 @@ exports[`List events should paginate 1`] = `
 
 .c16 > svg {
   vertical-align: bottom;
-}
-
-.c16:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c16:focus {
@@ -3376,7 +3359,6 @@ exports[`List events should paginate 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -3394,10 +3376,6 @@ exports[`List events should paginate 1`] = `
 
 .c18 > svg {
   vertical-align: bottom;
-}
-
-.c18:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c18:focus {
@@ -3829,7 +3807,6 @@ exports[`List events should paginate 1`] = `
               aria-label="Go to previous page"
               class="c12 c13"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -3857,7 +3834,6 @@ exports[`List events should paginate 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c16 c17"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -3872,7 +3848,6 @@ exports[`List events should paginate 1`] = `
             <button
               aria-label="Go to page 2"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -3887,7 +3862,6 @@ exports[`List events should paginate 1`] = `
             <button
               aria-label="Go to next page"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -4157,6 +4131,7 @@ exports[`List events should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -4216,8 +4191,7 @@ exports[`List events should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -4235,10 +4209,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
 
 .c16 > svg {
   vertical-align: bottom;
-}
-
-.c16:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c16:focus {
@@ -4277,7 +4247,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -4295,10 +4264,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
 
 .c18 > svg {
   vertical-align: bottom;
-}
-
-.c18:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c18:focus {
@@ -4550,7 +4515,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
               aria-label="Go to previous page"
               class="c12 c13"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -4578,7 +4542,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c16 c17"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -4593,7 +4556,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 2"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -4608,7 +4570,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 3"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               3
@@ -4623,7 +4584,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 4"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               4
@@ -4638,7 +4598,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 5"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               5
@@ -4653,7 +4612,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 6"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               6
@@ -4668,7 +4626,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to page 7"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               7
@@ -4683,7 +4640,6 @@ exports[`List events should render correct num items per page (step) 1`] = `
             <button
               aria-label="Go to next page"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -4953,6 +4909,7 @@ exports[`List events should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -5012,8 +4969,7 @@ exports[`List events should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -5031,10 +4987,6 @@ exports[`List events should render new data when page changes 1`] = `
 
 .c16 > svg {
   vertical-align: bottom;
-}
-
-.c16:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c16:focus {
@@ -5073,7 +5025,6 @@ exports[`List events should render new data when page changes 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -5091,10 +5042,6 @@ exports[`List events should render new data when page changes 1`] = `
 
 .c18 > svg {
   vertical-align: bottom;
-}
-
-.c18:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c18:focus {
@@ -5526,7 +5473,6 @@ exports[`List events should render new data when page changes 1`] = `
               aria-label="Go to previous page"
               class="c12 c13"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -5554,7 +5500,6 @@ exports[`List events should render new data when page changes 1`] = `
               aria-current="page"
               aria-label="Go to page 1"
               class="c16 c17"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -5569,7 +5514,6 @@ exports[`List events should render new data when page changes 1`] = `
             <button
               aria-label="Go to page 2"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -5584,7 +5528,6 @@ exports[`List events should render new data when page changes 1`] = `
             <button
               aria-label="Go to next page"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -5862,8 +5805,7 @@ exports[`List events should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to previous page"
-              class="StyledButtonKind-sc-1vhfpnt-0 eRddyj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 dqnbuu StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               <svg
@@ -5889,8 +5831,7 @@ exports[`List events should render new data when page changes 2`] = `
           >
             <button
               aria-label="Go to page 1"
-              class="StyledButtonKind-sc-1vhfpnt-0 eRddyj StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 dqnbuu StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               1
@@ -5905,8 +5846,7 @@ exports[`List events should render new data when page changes 2`] = `
             <button
               aria-current="page"
               aria-label="Go to page 2"
-              class="StyledButtonKind-sc-1vhfpnt-0 hbyrhB StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
-              kind="[object Object]"
+              class="StyledButtonKind-sc-1vhfpnt-0 eXcAgb StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 cQMJwu"
               type="button"
             >
               2
@@ -5921,9 +5861,8 @@ exports[`List events should render new data when page changes 2`] = `
             <button
               aria-disabled="true"
               aria-label="Go to next page"
-              class="StyledButtonKind-sc-1vhfpnt-0 fVgacz StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 kcEAcc"
+              class="StyledButtonKind-sc-1vhfpnt-0 UqvBO StyledPageControl__StyledPaginationButton-sc-1vlfaez-0 kcEAcc"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -6193,6 +6132,7 @@ exports[`List events should show correct item index when "show" is a number 1`] 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -6252,8 +6192,7 @@ exports[`List events should show correct item index when "show" is a number 1`] 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -6271,10 +6210,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
 
 .c16 > svg {
   vertical-align: bottom;
-}
-
-.c16:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c16:focus {
@@ -6313,7 +6248,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -6331,10 +6265,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
 
 .c18 > svg {
   vertical-align: bottom;
-}
-
-.c18:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c18:focus {
@@ -6766,7 +6696,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
               aria-label="Go to previous page"
               class="c12 c13"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -6794,7 +6723,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
               aria-current="page"
               aria-label="Go to page 1"
               class="c16 c17"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -6809,7 +6737,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
             <button
               aria-label="Go to page 2"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -6824,7 +6751,6 @@ exports[`List events should show correct item index when "show" is a number 1`] 
             <button
               aria-label="Go to next page"
               class="c18 c17"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -7076,7 +7002,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -7094,10 +7019,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
 
 .c11 > svg {
   vertical-align: bottom;
-}
-
-.c11:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c11:focus {
@@ -7138,8 +7059,7 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(51,51,51,0.06274509803921569);
-  color: #444444;
+  background: #33333310;
   text-align: center;
   -webkit-transition-property: color,background-color,border-color,box-shadow;
   transition-property: color,background-color,border-color,box-shadow;
@@ -7157,10 +7077,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
 
 .c15 > svg {
   vertical-align: bottom;
-}
-
-.c15:hover {
-  background-color: rgba(51,51,51,0.06274509803921569);
 }
 
 .c15:focus {
@@ -7199,6 +7115,7 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
   padding: 4px 22px;
   font-size: 18px;
   line-height: 24px;
+  opacity: 0.3;
   text-align: center;
   opacity: 0.3;
   cursor: default;
@@ -7615,7 +7532,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
             <button
               aria-label="Go to previous page"
               class="c11 c12"
-              kind="[object Object]"
               type="button"
             >
               <svg
@@ -7642,7 +7558,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
             <button
               aria-label="Go to page 1"
               class="c11 c12"
-              kind="[object Object]"
               type="button"
             >
               1
@@ -7658,7 +7573,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
               aria-current="page"
               aria-label="Go to page 2"
               class="c15 c12"
-              kind="[object Object]"
               type="button"
             >
               2
@@ -7675,7 +7589,6 @@ exports[`List events should show correct page when "show" is { page: # } 1`] = `
               aria-label="Go to next page"
               class="c16 c17"
               disabled=""
-              kind="[object Object]"
               type="button"
             >
               <svg
