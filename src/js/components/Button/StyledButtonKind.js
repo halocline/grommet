@@ -205,10 +205,12 @@ const plainStyle = () => css`
   }
 `;
 
-const StyledButtonKind = styled.button.attrs(() => ({
+const StyledButtonKind = styled.button.withConfig({
   // don't let kind attribute leak to DOM
-  kind: undefined,
-}))`
+  // https://styled-components.com/docs/api#shouldforwardprop
+  shouldForwardProp: (prop, defaultValidatorFn) =>
+    !['kind'].includes(prop) && defaultValidatorFn(prop),
+})`
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
