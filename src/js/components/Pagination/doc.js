@@ -92,105 +92,96 @@ export const themeDoc = {
     the pagination controls.`,
     type: 'string | (props) => {}',
   },
-  'pagination.control.extend': {
-    description: `Any additional style for each control.`,
-    type: 'string | (props) => {}',
-  },
-  'pagination.control.pad': {
-    description: `Padding around each control's label.`,
-    type: 'string | object',
-    defaultValue: '4px',
-  },
-  'pagination.control.size.small.border.radius': {
-    description: `Rounding of the corners for each control.`,
+  'pagination.button.size.small.border.radius': {
+    description: `Rounding of the corners for each button.`,
     type: 'string',
     defaultValue: '3px',
   },
-  'pagination.control.size.small.border.width': {
-    description: `Border thickness for each control.`,
+  'pagination.button.size.small.border.width': {
+    description: `Border thickness for each button.`,
     type: 'string',
     defaultValue: '2px',
   },
-  'pagination.control.size.small.font.size': {
-    description: `The font size of each control's label.`,
+  'pagination.button.size.small.font.size': {
+    description: `The font size of each button's label.`,
     type: 'string',
     defaultValue: '14px',
   },
-  'pagination.control.size.small.font.height': {
-    description: `The line-height of each control's label.`,
+  'pagination.button.size.small.font.height': {
+    description: `The line-height of each button's label.`,
     type: 'string',
     defaultValue: '20px',
   },
-  'pagination.control.size.small.height': {
-    description: `The height for each control.`,
+  'pagination.button.size.small.height': {
+    description: `The height for each button.`,
     type: 'string',
     defaultValue: '30px',
   },
-  'pagination.control.size.small.width': {
-    description: `The minimum width for each control. 
-    Width will scale up fitting the control's label.`,
+  'pagination.button.size.small.width': {
+    description: `The minimum width for each button. 
+    Width will scale up fitting the button's label.`,
     type: 'string',
     defaultValue: '30px',
   },
-  'pagination.control.size.medium.border.radius': {
-    description: `Rounding of the corners for each control.`,
+  'pagination.button.size.medium.border.radius': {
+    description: `Rounding of the corners for each button.`,
     type: 'string',
     defaultValue: '4px',
   },
-  'pagination.control.size.medium.border.width': {
-    description: `Border thickness for each control.`,
+  'pagination.button.size.medium.border.width': {
+    description: `Border thickness for each button.`,
     type: 'string',
     defaultValue: '2px',
   },
-  'pagination.control.size.medium.font.size': {
-    description: `The font size of each control's label.`,
+  'pagination.button.size.medium.font.size': {
+    description: `The font size of each button's label.`,
     type: 'string',
     defaultValue: '18px',
   },
-  'pagination.control.size.medium.font.height': {
-    description: `The line-height of each control's label.`,
+  'pagination.button.size.medium.font.height': {
+    description: `The line-height of each button's label.`,
     type: 'string',
     defaultValue: '24px',
   },
-  'pagination.control.size.medium.height': {
-    description: `The height for each control.`,
+  'pagination.button.size.medium.height': {
+    description: `The height for each button.`,
     type: 'string',
     defaultValue: '36px',
   },
-  'pagination.control.size.medium.width': {
-    description: `The minimum width for each control. 
-    Width will scale up fitting the control's label.`,
+  'pagination.button.size.medium.width': {
+    description: `The minimum width for each button. 
+    Width will scale up fitting the button's label.`,
     type: 'string',
     defaultValue: '36px',
   },
-  'pagination.control.size.large.border.radius': {
-    description: `Rounding of the corners for each control.`,
+  'pagination.button.size.large.border.radius': {
+    description: `Rounding of the corners for each button.`,
     type: 'string',
     defaultValue: '4px',
   },
-  'pagination.control.size.large.border.width': {
-    description: `Border thickness for each control.`,
+  'pagination.button.size.large.border.width': {
+    description: `Border thickness for each button.`,
     type: 'string',
     defaultValue: '6px',
   },
-  'pagination.control.size.large.font.size': {
-    description: `The font size of each control's label.`,
+  'pagination.button.size.large.font.size': {
+    description: `The font size of each button's label.`,
     type: 'string',
     defaultValue: '22px',
   },
-  'pagination.control.size.large.font.height': {
-    description: `The line-height of each control's label.`,
+  'pagination.button.size.large.font.height': {
+    description: `The line-height of each button's label.`,
     type: 'string',
     defaultValue: '28px',
   },
-  'pagination.control.size.large.height': {
-    description: `The height for each control.`,
+  'pagination.button.size.large.height': {
+    description: `The height for each button.`,
     type: 'string',
     defaultValue: '48px',
   },
-  'pagination.control.size.large.width': {
-    description: `The minimum width for each control. 
-    Width will scale up fitting the control's label.`,
+  'pagination.button.size.large.width': {
+    description: `The minimum width for each button. 
+    Width will scale up fitting the button's label.`,
     type: 'string',
     defaultValue: '48px',
   },

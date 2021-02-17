@@ -259,29 +259,9 @@ Defaults to
 undefined
 ```
 
-**pagination.control.extend**
+**pagination.button.size.small.border.radius**
 
-Any additional style for each control. Expects `string | (props) => {}`.
-
-Defaults to
-
-```
-undefined
-```
-
-**pagination.control.pad**
-
-Padding around each control's label. Expects `string | object`.
-
-Defaults to
-
-```
-4px
-```
-
-**pagination.control.size.small.border.radius**
-
-Rounding of the corners for each control. Expects `string`.
+Rounding of the corners for each button. Expects `string`.
 
 Defaults to
 
@@ -289,9 +269,9 @@ Defaults to
 3px
 ```
 
-**pagination.control.size.small.border.width**
+**pagination.button.size.small.border.width**
 
-Border thickness for each control. Expects `string`.
+Border thickness for each button. Expects `string`.
 
 Defaults to
 
@@ -299,9 +279,9 @@ Defaults to
 2px
 ```
 
-**pagination.control.size.small.font.size**
+**pagination.button.size.small.font.size**
 
-The font size of each control's label. Expects `string`.
+The font size of each button's label. Expects `string`.
 
 Defaults to
 
@@ -309,9 +289,9 @@ Defaults to
 14px
 ```
 
-**pagination.control.size.small.font.height**
+**pagination.button.size.small.font.height**
 
-The line-height of each control's label. Expects `string`.
+The line-height of each button's label. Expects `string`.
 
 Defaults to
 
@@ -319,20 +299,9 @@ Defaults to
 20px
 ```
 
-**pagination.control.size.small.height**
+**pagination.button.size.small.height**
 
-The height for each control. Expects `string`.
-
-Defaults to
-
-```
-30px
-```
-
-**pagination.control.size.small.width**
-
-The minimum width for each control. 
-    Width will scale up fitting the control's label. Expects `string`.
+The height for each button. Expects `string`.
 
 Defaults to
 
@@ -340,9 +309,20 @@ Defaults to
 30px
 ```
 
-**pagination.control.size.medium.border.radius**
+**pagination.button.size.small.width**
 
-Rounding of the corners for each control. Expects `string`.
+The minimum width for each button. 
+    Width will scale up fitting the button's label. Expects `string`.
+
+Defaults to
+
+```
+30px
+```
+
+**pagination.button.size.medium.border.radius**
+
+Rounding of the corners for each button. Expects `string`.
 
 Defaults to
 
@@ -350,9 +330,9 @@ Defaults to
 4px
 ```
 
-**pagination.control.size.medium.border.width**
+**pagination.button.size.medium.border.width**
 
-Border thickness for each control. Expects `string`.
+Border thickness for each button. Expects `string`.
 
 Defaults to
 
@@ -360,9 +340,9 @@ Defaults to
 2px
 ```
 
-**pagination.control.size.medium.font.size**
+**pagination.button.size.medium.font.size**
 
-The font size of each control's label. Expects `string`.
+The font size of each button's label. Expects `string`.
 
 Defaults to
 
@@ -370,9 +350,9 @@ Defaults to
 18px
 ```
 
-**pagination.control.size.medium.font.height**
+**pagination.button.size.medium.font.height**
 
-The line-height of each control's label. Expects `string`.
+The line-height of each button's label. Expects `string`.
 
 Defaults to
 
@@ -380,20 +360,9 @@ Defaults to
 24px
 ```
 
-**pagination.control.size.medium.height**
+**pagination.button.size.medium.height**
 
-The height for each control. Expects `string`.
-
-Defaults to
-
-```
-36px
-```
-
-**pagination.control.size.medium.width**
-
-The minimum width for each control. 
-    Width will scale up fitting the control's label. Expects `string`.
+The height for each button. Expects `string`.
 
 Defaults to
 
@@ -401,9 +370,20 @@ Defaults to
 36px
 ```
 
-**pagination.control.size.large.border.radius**
+**pagination.button.size.medium.width**
 
-Rounding of the corners for each control. Expects `string`.
+The minimum width for each button. 
+    Width will scale up fitting the button's label. Expects `string`.
+
+Defaults to
+
+```
+36px
+```
+
+**pagination.button.size.large.border.radius**
+
+Rounding of the corners for each button. Expects `string`.
 
 Defaults to
 
@@ -411,9 +391,9 @@ Defaults to
 4px
 ```
 
-**pagination.control.size.large.border.width**
+**pagination.button.size.large.border.width**
 
-Border thickness for each control. Expects `string`.
+Border thickness for each button. Expects `string`.
 
 Defaults to
 
@@ -421,9 +401,9 @@ Defaults to
 6px
 ```
 
-**pagination.control.size.large.font.size**
+**pagination.button.size.large.font.size**
 
-The font size of each control's label. Expects `string`.
+The font size of each button's label. Expects `string`.
 
 Defaults to
 
@@ -431,9 +411,9 @@ Defaults to
 22px
 ```
 
-**pagination.control.size.large.font.height**
+**pagination.button.size.large.font.height**
 
-The line-height of each control's label. Expects `string`.
+The line-height of each button's label. Expects `string`.
 
 Defaults to
 
@@ -441,9 +421,9 @@ Defaults to
 28px
 ```
 
-**pagination.control.size.large.height**
+**pagination.button.size.large.height**
 
-The height for each control. Expects `string`.
+The height for each button. Expects `string`.
 
 Defaults to
 
@@ -451,10 +431,10 @@ Defaults to
 48px
 ```
 
-**pagination.control.size.large.width**
+**pagination.button.size.large.width**
 
-The minimum width for each control. 
-    Width will scale up fitting the control's label. Expects `string`.
+The minimum width for each button. 
+    Width will scale up fitting the button's label. Expects `string`.
 
 Defaults to
 
