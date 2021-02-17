@@ -62,25 +62,64 @@ export const doc = Pagination => {
 };
 
 export const themeDoc = {
-  'pagination.button.active.background.color': {
-    description: `Background color when the button is active.`,
-    type: 'string | { dark: string, light: string }',
-    defaultValue: 'active-background',
-  },
-  'pagination.button.color': {
-    description: `The color of the text label.`,
-    type: 'string | { dark: string, light: string }',
-    defaultValue: 'text-strong',
-  },
-  'pagination.button.hover.background.color': {
-    description: 'Background color of the button when hovered.',
-    type: 'string | { dark: string, light: string }',
-    defaultValue: 'background-contrast',
-  },
-  'pagination.button.hover.color': {
-    description: 'The color of the text label when hovered.',
-    type: 'string | { dark: string, light: string }',
-    defaultValue: undefined,
+  'pagination.button': {
+    description: 'Any valid Button theming to apply on the pagination buttons.',
+    type: 'object',
+    defaultValue: `{
+      active: {
+        background: {
+          color: 'active-background',
+        },
+      },
+      color: 'text-strong',
+      hover: {
+        background: {
+          color: 'background-contrast',
+        },
+        color: undefined,
+      },
+      size: {
+        small: {
+          border: {
+            radius: 3px,
+            width: 2px,
+          },
+          pad: {
+            vertical: 4px,
+            horizontal: 4px,
+          },
+          font: 14px,
+          height: 30px,
+          width: 30px,
+        },
+        medium: {
+          border: {
+            radius: 4px,
+            width: 2px,
+          },
+          pad: {
+            vertical: 4px,
+            horizontal: 4px,
+          },
+          font: 18px,
+          height: 36px,
+          width: 36px,
+        },
+        large: {
+          border: {
+            radius: 6px,
+            width: 2px,
+          },
+          pad: {
+            vertical: 4px,
+            horizontal: 4px,
+          },
+          font: 22px,
+          height: 48px,
+          width: 48px,
+        },
+      },
+    }`,
   },
   'pagination.container': {
     description: `Any valid Box props for the Box wrapping the 
@@ -91,99 +130,6 @@ export const themeDoc = {
     description: `Any additional style for the Box wrapping 
     the pagination controls.`,
     type: 'string | (props) => {}',
-  },
-  'pagination.button.size.small.border.radius': {
-    description: `Rounding of the corners for each button.`,
-    type: 'string',
-    defaultValue: '3px',
-  },
-  'pagination.button.size.small.border.width': {
-    description: `Border thickness for each button.`,
-    type: 'string',
-    defaultValue: '2px',
-  },
-  'pagination.button.size.small.font.size': {
-    description: `The font size of each button's label.`,
-    type: 'string',
-    defaultValue: '14px',
-  },
-  'pagination.button.size.small.font.height': {
-    description: `The line-height of each button's label.`,
-    type: 'string',
-    defaultValue: '20px',
-  },
-  'pagination.button.size.small.height': {
-    description: `The height for each button.`,
-    type: 'string',
-    defaultValue: '30px',
-  },
-  'pagination.button.size.small.width': {
-    description: `The minimum width for each button. 
-    Width will scale up fitting the button's label.`,
-    type: 'string',
-    defaultValue: '30px',
-  },
-  'pagination.button.size.medium.border.radius': {
-    description: `Rounding of the corners for each button.`,
-    type: 'string',
-    defaultValue: '4px',
-  },
-  'pagination.button.size.medium.border.width': {
-    description: `Border thickness for each button.`,
-    type: 'string',
-    defaultValue: '2px',
-  },
-  'pagination.button.size.medium.font.size': {
-    description: `The font size of each button's label.`,
-    type: 'string',
-    defaultValue: '18px',
-  },
-  'pagination.button.size.medium.font.height': {
-    description: `The line-height of each button's label.`,
-    type: 'string',
-    defaultValue: '24px',
-  },
-  'pagination.button.size.medium.height': {
-    description: `The height for each button.`,
-    type: 'string',
-    defaultValue: '36px',
-  },
-  'pagination.button.size.medium.width': {
-    description: `The minimum width for each button. 
-    Width will scale up fitting the button's label.`,
-    type: 'string',
-    defaultValue: '36px',
-  },
-  'pagination.button.size.large.border.radius': {
-    description: `Rounding of the corners for each button.`,
-    type: 'string',
-    defaultValue: '4px',
-  },
-  'pagination.button.size.large.border.width': {
-    description: `Border thickness for each button.`,
-    type: 'string',
-    defaultValue: '6px',
-  },
-  'pagination.button.size.large.font.size': {
-    description: `The font size of each button's label.`,
-    type: 'string',
-    defaultValue: '22px',
-  },
-  'pagination.button.size.large.font.height': {
-    description: `The line-height of each button's label.`,
-    type: 'string',
-    defaultValue: '28px',
-  },
-  'pagination.button.size.large.height': {
-    description: `The height for each button.`,
-    type: 'string',
-    defaultValue: '48px',
-  },
-  'pagination.button.size.large.width': {
-    description: `The minimum width for each button. 
-    Width will scale up fitting the button's label.`,
-    type: 'string',
-    defaultValue: '48px',
   },
   'pagination.controls.align': {
     description: `How the pagination controls should be aligned 

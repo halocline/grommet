@@ -36,10 +36,7 @@ const fontStyle = props => {
   `;
 };
 
-const padFromTheme = (size, theme, kind) => {
-  // caller has specified a themeObj to use for styling
-  // relevant for cases like pagination which looks to theme.pagination.button
-  const themeObj = typeof kind === 'object' ? kind : theme.button;
+const padFromTheme = (size, theme, themeObj) => {
   if (size && themeObj.size && themeObj.size[size] && themeObj.size[size].pad) {
     return {
       vertical: themeObj.size[size].pad.vertical,
@@ -61,7 +58,10 @@ const padFromTheme = (size, theme, kind) => {
 };
 
 const padStyle = ({ sizeProp: size, theme, kind }) => {
-  const pad = padFromTheme(size, theme, kind);
+  // caller has specified a themeObj to use for styling
+  // relevant for cases like pagination which looks to theme.pagination.button
+  const themeObj = typeof kind === 'object' ? kind : theme.button;
+  const pad = padFromTheme(size, theme, themeObj);
   return pad
     ? css`
         padding: ${pad.vertical} ${pad.horizontal};
@@ -106,11 +106,11 @@ const kindStyle = ({ colorValue, kind, sizeProp: size, themePaths, theme }) => {
 
   // caller has specified a themeObj to use for styling
   // relevant for cases like pagination which looks to theme.pagination.button
-  const themeObj = typeof kind === 'object' ? kind : undefined;
+  const themeObj = typeof kind === 'object' ? kind : theme.button;
 
   const pad = padFromTheme(size, theme, themeObj);
   themePaths.base.forEach(themePath => {
-    const obj = getPath(themeObj || theme.button, themePath);
+    const obj = getPath(themeObj, themePath);
     if (obj) {
       styles.push(kindPartStyles(obj, theme, colorValue));
       if (obj.border && obj.border.width && pad && !obj.padding) {
@@ -123,8 +123,8 @@ const kindStyle = ({ colorValue, kind, sizeProp: size, themePaths, theme }) => {
   });
 
   // do the styling from the root of the object if caller passes one
-  if (!themePaths.base.length && themeObj) {
-    const obj = themeObj;
+  if (!themePaths.base.length && typeof kind === 'object') {
+    const obj = kind;
     if (obj) {
       styles.push(kindPartStyles(obj, theme, colorValue));
       if (obj.border && obj.border.width && pad && !obj.padding) {
@@ -137,7 +137,7 @@ const kindStyle = ({ colorValue, kind, sizeProp: size, themePaths, theme }) => {
   }
 
   themePaths.hover.forEach(themePath => {
-    const obj = getPath(themeObj || theme.button, themePath);
+    const obj = getPath(themeObj, themePath);
 
     if (obj) {
       const partStyles = kindPartStyles(obj, theme);
